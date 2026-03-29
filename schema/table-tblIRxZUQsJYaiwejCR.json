@@ -1,0 +1,99 @@
+{
+  "id": "tblIRxZUQsJYaiwejCR",
+  "name": "Iceland Trip - Travelers",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Iceland_Trip_Travelers\"",
+  "fields": [
+    {
+      "id": "fldNJC588iNiUZrDv3z",
+      "name": "Name",
+      "dbFieldName": "Name",
+      "type": "singleLineText",
+      "description": "Traveler name",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldqm7MpNHlFAaQnZrF",
+      "name": "Email",
+      "dbFieldName": "Email",
+      "type": "singleLineText",
+      "description": "Contact email",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldZqlIQWKLDtQTF6hm",
+      "name": "Phone",
+      "dbFieldName": "Phone",
+      "type": "singleLineText",
+      "description": "Phone number",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldGwxrBjqV6K3wUxVB",
+      "name": "Avatar",
+      "dbFieldName": "Avatar",
+      "type": "attachment",
+      "description": "Profile photo",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldudYMweNdy4F8kCRF",
+      "name": "Emergency Contact",
+      "dbFieldName": "Emergency_Contact",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldNjQMfcIYRkBXNpLe",
+      "name": "Passport Number",
+      "dbFieldName": "Passport_Number",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldDnGsByjJxXByiJi1",
+      "name": "Dietary Restrictions",
+      "dbFieldName": "Dietary_Restrictions",
+      "type": "multipleSelect",
+      "description": null,
+      "options": [
+        "Vegetarian",
+        "Vegan",
+        "Gluten-Free",
+        "Halal",
+        "Kosher",
+        "No Restrictions"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    }
+  ]
+}

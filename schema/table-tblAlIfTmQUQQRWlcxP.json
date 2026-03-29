@@ -1,0 +1,265 @@
+{
+  "id": "tblAlIfTmQUQQRWlcxP",
+  "name": "CRM - Companies",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"CRM_Companies\"",
+  "fields": [
+    {
+      "id": "fldFpB8U5ixdMCfKZCD",
+      "name": "Company Name",
+      "dbFieldName": "Company_Name",
+      "type": "singleLineText",
+      "description": "Legal company name",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldNiodReJFweeBU7Ms",
+      "name": "Industry",
+      "dbFieldName": "Industry",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Technology",
+        "Finance",
+        "Healthcare",
+        "Manufacturing",
+        "Retail",
+        "Consulting",
+        "Other"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldaoZQiYLAY9STsWGZ",
+      "name": "Company Size",
+      "dbFieldName": "Company_Size",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "1-10",
+        "11-50",
+        "51-200",
+        "201-500",
+        "501-1000",
+        "1000+"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldhly7dZkNl5E94cSd",
+      "name": "Annual Revenue",
+      "dbFieldName": "Annual_Revenue",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 0,
+          "type": "currency",
+          "symbol": "$"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldzJFPVWfJQZSpZrb2",
+      "name": "Website",
+      "dbFieldName": "Website",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldcBjUAN133ZrqmV97",
+      "name": "Address",
+      "dbFieldName": "Address",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldfvGzxcqdVrHyn4wE",
+      "name": "Status",
+      "dbFieldName": "Status",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Lead",
+        "Prospect",
+        "Customer",
+        "Churned"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldipXCczvZjRYqvQQp",
+      "name": "Created Date",
+      "dbFieldName": "Created_Date",
+      "type": "createdTime",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "UTC"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldBGR2c7DPbb8H7HvM",
+      "name": "CRM - Contacts",
+      "dbFieldName": "CRM_Contacts",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tblMFBuSzEcDjRgDuqm",
+        "lookupFieldId": "fldx4syHWCXWIFIacQJ",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Contacts",
+        "selfKeyName": "__fk_fldd7R441zGKNIKpRpI",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldd7R441zGKNIKpRpI"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fld1y7mUuawpX3n4QTR",
+      "name": "CRM - Deals",
+      "dbFieldName": "CRM_Deals",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tblGj6hp8mV1AFSHll7",
+        "lookupFieldId": "fldVPtTFgnDf8dLvvgs",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Deals",
+        "selfKeyName": "__fk_fldmjU6duxh8gqZaMK4",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldmjU6duxh8gqZaMK4"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldw9eZw7YRD7yz8fmS",
+      "name": "Total Deal Value",
+      "dbFieldName": "Total_Deal_Value",
+      "type": "rollup",
+      "description": "Sum of all deal values for this company",
+      "options": {
+        "expression": "sum({values})",
+        "formatting": {
+          "type": "currency",
+          "symbol": "$",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldXrqLOUZOhT0Ynbqf",
+      "name": "CRM - Invoices",
+      "dbFieldName": "CRM_Invoices",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tblbltjuYtAfVpXEoP7",
+        "lookupFieldId": "fldWiiKyON19J8uNtWi",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Invoices",
+        "selfKeyName": "__fk_fld0CPnrxatHQYaTfOw",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fld0CPnrxatHQYaTfOw"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldMBWaEpwGjVe5P2RO",
+      "name": "Company Summary",
+      "dbFieldName": "Company_Summary",
+      "type": "longText",
+      "description": "AI-generated company profile summary",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld99YVhaD3sY1MVt24",
+      "name": "Open Deals Count",
+      "dbFieldName": "Open_Deals_Count",
+      "type": "rollup",
+      "description": "Number of open deals for this company",
+      "options": {
+        "expression": "countall({values})",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldPZCLV51BKsAaq4Gc",
+      "name": "Total Invoiced",
+      "dbFieldName": "Total_Invoiced",
+      "type": "rollup",
+      "description": "Total invoice amount for this company",
+      "options": {
+        "expression": "sum({values})",
+        "formatting": {
+          "type": "currency",
+          "symbol": "$",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    }
+  ]
+}

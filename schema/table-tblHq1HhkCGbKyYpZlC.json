@@ -1,0 +1,123 @@
+{
+  "id": "tblHq1HhkCGbKyYpZlC",
+  "name": "Receipt Tracker",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Receipt_Tracker\"",
+  "fields": [
+    {
+      "id": "fldQYP5kphuAEa2PeXd",
+      "name": "Receipt Name",
+      "dbFieldName": "Receipt_Name",
+      "type": "singleLineText",
+      "description": "Name or description of the receipt",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldGVid3ws6KPN8oGSS",
+      "name": "Merchant",
+      "dbFieldName": "Merchant",
+      "type": "singleLineText",
+      "description": "Store or business name",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld8d0lGAq76x0Ys7Hy",
+      "name": "Category",
+      "dbFieldName": "Category",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Food & Dining",
+        "Groceries",
+        "Gas & Fuel",
+        "Home Improvement",
+        "Services",
+        "Other"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldu6a8kMUFVwa4QTDY",
+      "name": "Total Amount",
+      "dbFieldName": "Total_Amount",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": "$"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldPUc6s2nN3mBgSH7O",
+      "name": "Date",
+      "dbFieldName": "Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "M/D/YYYY",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldsu3e4KN9Bm3GrvjZ",
+      "name": "Receipt Image",
+      "dbFieldName": "Receipt_Image",
+      "type": "attachment",
+      "description": "Scanned receipt or invoice",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldF7uaeT9n5epEUMG2",
+      "name": "Invoice Number",
+      "dbFieldName": "Invoice_Number",
+      "type": "singleLineText",
+      "description": "Invoice or receipt number",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldBCz5ICh2GADy6qfC",
+      "name": "Notes",
+      "dbFieldName": "Notes",
+      "type": "longText",
+      "description": "Additional details or items purchased",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}

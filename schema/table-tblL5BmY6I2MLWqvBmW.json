@@ -1,0 +1,188 @@
+{
+  "id": "tblL5BmY6I2MLWqvBmW",
+  "name": "CRM - Activities",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"CRM_Activities\"",
+  "fields": [
+    {
+      "id": "fld58dkl6yWeJHxuPyn",
+      "name": "Activity Title",
+      "dbFieldName": "Activity_Title",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldfGRtyJZRDK6C6Iwr",
+      "name": "Activity Type",
+      "dbFieldName": "Activity_Type",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Call",
+        "Email",
+        "Meeting",
+        "Demo",
+        "Follow-up",
+        "Note"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld4Nor9E4n13KYekPE",
+      "name": "Activity Date",
+      "dbFieldName": "Activity_Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "M/D/YYYY",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld1oZI8fPi4Pom1jUX",
+      "name": "Duration (mins)",
+      "dbFieldName": "Duration_mins",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldhep6qeC4RnPJne9V",
+      "name": "Notes",
+      "dbFieldName": "Notes",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldVRW2c9YclO9zxx4p",
+      "name": "Outcome",
+      "dbFieldName": "Outcome",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Successful",
+        "Follow-up needed",
+        "Not interested",
+        "No response"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldMYitjH54LYOdaEMZ",
+      "name": "Created Date",
+      "dbFieldName": "Created_Date",
+      "type": "createdTime",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "UTC"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldqD3pnZDd11NsiEEu",
+      "name": "Created By",
+      "dbFieldName": "Created_By",
+      "type": "createdBy",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldFXxNZEtK2w4Dmrwt",
+      "name": "Related Deal",
+      "dbFieldName": "Related_Deal",
+      "type": "link",
+      "description": "Link activity to deal",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tblGj6hp8mV1AFSHll7",
+        "isOneWay": false,
+        "symmetricFieldId": "fldQO7DDJrvNNyZyDpK",
+        "lookupFieldId": "fldVPtTFgnDf8dLvvgs",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Activities",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldFXxNZEtK2w4Dmrwt"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldBtkVb3KxR4KVXU84",
+      "name": "Related Contact",
+      "dbFieldName": "Related_Contact",
+      "type": "link",
+      "description": "Link activity to contact",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tblMFBuSzEcDjRgDuqm",
+        "isOneWay": false,
+        "symmetricFieldId": "fldl6Ivv1gM90Ak40lP",
+        "lookupFieldId": "fldx4syHWCXWIFIacQJ",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Activities",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldBtkVb3KxR4KVXU84"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldes5hnSmUbuAwYext",
+      "name": "Activity Summary",
+      "dbFieldName": "Activity_Summary",
+      "type": "singleLineText",
+      "description": "AI-generated summary of activity notes",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}

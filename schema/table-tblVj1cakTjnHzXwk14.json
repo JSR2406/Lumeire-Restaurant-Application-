@@ -1,0 +1,148 @@
+{
+  "id": "tblVj1cakTjnHzXwk14",
+  "name": "莫卧儿珍宝展品",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Mo_Wo_Er_Zhen_Bao_Zhan_Pin\"",
+  "fields": [
+    {
+      "id": "fld3ba5Q97PcWuf9HRs",
+      "name": "展品名称",
+      "dbFieldName": "Zhan_Pin_Ming_Cheng",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldeTDAa31f61EdJSSD",
+      "name": "展品图片",
+      "dbFieldName": "Zhan_Pin_Tu_Pian",
+      "type": "attachment",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldKp5cghSk3WoJhiPh",
+      "name": "展品分类",
+      "dbFieldName": "Zhan_Pin_Fen_Lei",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "珠宝首饰",
+        "武器兵器",
+        "玉石器皿",
+        "纺织品",
+        "绘画作品",
+        "其他"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldFLRjX2j8SanfSAfE",
+      "name": "年代",
+      "dbFieldName": "Nian_Dai",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldCYy7lLM8gA3XbiE2",
+      "name": "详细介绍",
+      "dbFieldName": "Xiang_Xi_Jie_Shao",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldNbmxlOqC5k64Pihu",
+      "name": "材质",
+      "dbFieldName": "Cai_Zhi",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld5zDbknnWVnRCgSB9",
+      "name": "尺寸",
+      "dbFieldName": "Chi_Cun",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldX1BQTxbWagRQq1td",
+      "name": "展示顺序",
+      "dbFieldName": "Zhan_Shi_Shun_Xu",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 0,
+          "type": "decimal"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldOPZhrAu4WHt0DFdO",
+      "name": "是否热门",
+      "dbFieldName": "Shi_Fou_Re_Men",
+      "type": "checkbox",
+      "description": null,
+      "options": {},
+      "cellValueType": "boolean",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldGmL0daS03GGcBfJy",
+      "name": "观众评论",
+      "dbFieldName": "Guan_Zhong_Ping_Lun",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tblSD9rCSplrJE6mTfa",
+        "lookupFieldId": "fldPnMdbg2QQAVR5PJR",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.Guan_Zhong_Ping_Lun",
+        "selfKeyName": "__fk_fld0r0Oj71SeMGX0biG",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fld0r0Oj71SeMGX0biG"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    }
+  ]
+}

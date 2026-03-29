@@ -1,0 +1,334 @@
+{
+  "id": "tblGj6hp8mV1AFSHll7",
+  "name": "CRM - Deals",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"CRM_Deals\"",
+  "fields": [
+    {
+      "id": "fldVPtTFgnDf8dLvvgs",
+      "name": "Deal Name",
+      "dbFieldName": "Deal_Name",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldZRZU3d1a5UA3IAPl",
+      "name": "Stage",
+      "dbFieldName": "Stage",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Qualification",
+        "Discovery",
+        "Proposal",
+        "Negotiation",
+        "Closed Won",
+        "Closed Lost"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldqVEoe8iCypV73HtA",
+      "name": "Deal Value",
+      "dbFieldName": "Deal_Value",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": "$"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldOgj8ntA4kTDM75p7",
+      "name": "Probability",
+      "dbFieldName": "Probability",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 0,
+          "type": "percent"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldO7sbfuGyFzHrcVPj",
+      "name": "Expected Close Date",
+      "dbFieldName": "Expected_Close_Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "M/D/YYYY",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld6oaxeUR6hnZzdFdj",
+      "name": "Deal Source",
+      "dbFieldName": "Deal_Source",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Inbound",
+        "Outbound",
+        "Referral",
+        "Partner",
+        "Event"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldBgrsbpPYbCbCPGRt",
+      "name": "Created Date",
+      "dbFieldName": "Created_Date",
+      "type": "createdTime",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "UTC"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld77LK07fnEt5COAeO",
+      "name": "Last Modified",
+      "dbFieldName": "Last_Modified",
+      "type": "lastModifiedTime",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "UTC"
+        },
+        "expression": "LAST_MODIFIED_TIME()",
+        "trackedFieldIds": []
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldmjU6duxh8gqZaMK4",
+      "name": "Company",
+      "dbFieldName": "Company",
+      "type": "link",
+      "description": "Link deal to company",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tblAlIfTmQUQQRWlcxP",
+        "isOneWay": false,
+        "symmetricFieldId": "fld1y7mUuawpX3n4QTR",
+        "lookupFieldId": "fldFpB8U5ixdMCfKZCD",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Deals",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldmjU6duxh8gqZaMK4"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld0NfWUBoPTTTrYU41",
+      "name": "CRM - Invoices",
+      "dbFieldName": "CRM_Invoices",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tblbltjuYtAfVpXEoP7",
+        "lookupFieldId": "fldWiiKyON19J8uNtWi",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Invoices",
+        "selfKeyName": "__fk_fldOqmvxHZ4LFlKFdrk",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldOqmvxHZ4LFlKFdrk"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fld1xyMPy1ELwAOuG7d",
+      "name": "Next Best Action",
+      "dbFieldName": "Next_Best_Action",
+      "type": "longText",
+      "description": "AI-recommended next action for the deal",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldG1rTcAw9mnw39PqZ",
+      "name": "Primary Contact",
+      "dbFieldName": "Primary_Contact",
+      "type": "link",
+      "description": "Main contact for this deal",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tblMFBuSzEcDjRgDuqm",
+        "isOneWay": false,
+        "symmetricFieldId": "fldngP4Bw4aJV2rmhBG",
+        "lookupFieldId": "fldx4syHWCXWIFIacQJ",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Deals",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldG1rTcAw9mnw39PqZ"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldbiqSRmldP2wk7PSp",
+      "name": "Weighted Value",
+      "dbFieldName": "Weighted_Value",
+      "type": "formula",
+      "description": "Deal value * probability",
+      "options": {
+        "expression": "{fldqVEoe8iCypV73HtA} * {fldOgj8ntA4kTDM75p7}",
+        "formatting": {
+          "type": "currency",
+          "symbol": "$",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldj2VJQ1Fanbs7XECN",
+      "name": "Age (Days)",
+      "dbFieldName": "Age_Days",
+      "type": "formula",
+      "description": "Days since deal was created",
+      "options": {
+        "expression": "DATETIME_DIFF(NOW(), {fldBgrsbpPYbCbCPGRt}, 'day')",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld232BQqI0dpOdJgK9",
+      "name": "Deal Health Score",
+      "dbFieldName": "Deal_Health_Score",
+      "type": "rating",
+      "description": "AI-assessed health of the deal (1-5 stars)",
+      "options": {
+        "icon": "star",
+        "color": "yellowBright",
+        "max": 5
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldQO7DDJrvNNyZyDpK",
+      "name": "CRM - Activities",
+      "dbFieldName": "CRM_Activities",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tblL5BmY6I2MLWqvBmW",
+        "lookupFieldId": "fld58dkl6yWeJHxuPyn",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Activities",
+        "selfKeyName": "__fk_fldFXxNZEtK2w4Dmrwt",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldFXxNZEtK2w4Dmrwt"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fld2w1l04rNGOD7mhWF",
+      "name": "Days to Close",
+      "dbFieldName": "Days_to_Close",
+      "type": "formula",
+      "description": "Days until expected close date",
+      "options": {
+        "expression": "DATETIME_DIFF({fldO7sbfuGyFzHrcVPj}, NOW(), 'day')",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld2wrurgSEoXba0Jse",
+      "name": "CRM - Tasks",
+      "dbFieldName": "CRM_Tasks",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tblm8YxHZpXRtJeANwX",
+        "lookupFieldId": "fldKkG2NK7p3y27lAa4",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Tasks",
+        "selfKeyName": "__fk_fldDXqMlmTVfi7eDGwZ",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldDXqMlmTVfi7eDGwZ"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    }
+  ]
+}

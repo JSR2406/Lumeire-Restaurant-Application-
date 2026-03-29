@@ -1,0 +1,364 @@
+{
+  "id": "tbloP9hLMO03MV8ixLU",
+  "name": "合同管理",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"He_Tong_Guan_Li\"",
+  "fields": [
+    {
+      "id": "fld91ih6y7OnpzEIlGO",
+      "name": "合同编号",
+      "dbFieldName": "He_Tong_Bian_Hao",
+      "type": "singleLineText",
+      "description": "合同的唯一编号",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldJsbpxwMBMTx2cfUv",
+      "name": "合同名称",
+      "dbFieldName": "He_Tong_Ming_Cheng",
+      "type": "singleLineText",
+      "description": "合同标题或名称",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldfplcaO21izxWpWr5",
+      "name": "合同类型",
+      "dbFieldName": "He_Tong_Lei_Xing",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "销售合同",
+        "服务合同",
+        "框架协议",
+        "补充协议",
+        "其他"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldxX66hBRPxbjdhrqI",
+      "name": "合同状态",
+      "dbFieldName": "He_Tong_Zhuang_Tai",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "草稿",
+        "审批中",
+        "已签约",
+        "执行中",
+        "已完成",
+        "已作废"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldl9yuRZZOe240lfYn",
+      "name": "签约日期",
+      "dbFieldName": "Qian_Yue_Ri_Qi",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldVvUm30x0PTLlo5WO",
+      "name": "生效日期",
+      "dbFieldName": "Sheng_Xiao_Ri_Qi",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldc6xSv8BRWRofa0oZ",
+      "name": "到期日期",
+      "dbFieldName": "Dao_Qi_Ri_Qi",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldm2HmrIptndOxL75U",
+      "name": "合同金额",
+      "dbFieldName": "He_Tong_Jin_E",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": "¥"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldGbJcYiAWdCYxjFNr",
+      "name": "付款方式",
+      "dbFieldName": "Fu_Kuan_Fang_Shi",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "一次性付款",
+        "分期付款",
+        "预付+尾款",
+        "按进度付款",
+        "其他"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldICTcmBoqV4kXUyWd",
+      "name": "负责销售",
+      "dbFieldName": "Fu_Ze_Xiao_Shou",
+      "type": "user",
+      "description": "负责此合同的销售人员",
+      "options": {
+        "isMultiple": false,
+        "shouldNotify": true
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldBJSmUBBFHa6hQqOL",
+      "name": "合同附件",
+      "dbFieldName": "He_Tong_Fu_Jian",
+      "type": "attachment",
+      "description": "合同扫描件或PDF文件",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldjenCnMdCK8acWJXs",
+      "name": "备注",
+      "dbFieldName": "Bei_Zhu",
+      "type": "longText",
+      "description": "合同相关备注",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld1nXos9B34K5P6C21",
+      "name": "创建时间",
+      "dbFieldName": "Chuang_Jian_Shi_Jian",
+      "type": "createdTime",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "UTC"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldp0roUmvcywXDOe2R",
+      "name": "关联客户",
+      "dbFieldName": "Guan_Lian_Ke_Hu",
+      "type": "link",
+      "description": "合同对应的客户",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tblFAuhsl498eGCdBgF",
+        "isOneWay": false,
+        "symmetricFieldId": "fldK7IyfrUkvL7AqQPk",
+        "lookupFieldId": "fldLPqASvnWDhJIoNeq",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.He_Tong_Guan_Li",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldp0roUmvcywXDOe2R"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldvFgqb8tQKrl0GoZn",
+      "name": "财务收款",
+      "dbFieldName": "Cai_Wu_Shou_Kuan",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tblVdbyg4Qb0aVzeZh1",
+        "lookupFieldId": "fld47lxcaEgGXCKxpmZ",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.Cai_Wu_Shou_Kuan",
+        "selfKeyName": "__fk_fldKLMOAnAbA61f3eH1",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldKLMOAnAbA61f3eH1"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldhT8yuhC0CrqSb4F0",
+      "name": "未收款金额",
+      "dbFieldName": "Wei_Shou_Kuan_Jin_E",
+      "type": "formula",
+      "description": "合同金额减去已收款金额",
+      "options": {
+        "expression": "IF({fldm2HmrIptndOxL75U}, {fldm2HmrIptndOxL75U} - {fldG4T5iHXWtfhcacv2}, 0)",
+        "formatting": {
+          "type": "currency",
+          "precision": 2,
+          "symbol": "¥"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldsykCTkeD96vuH5SN",
+      "name": "距离到期天数",
+      "dbFieldName": "Ju_Chi_Dao_Qi_Tian_Shu",
+      "type": "formula",
+      "description": "合同到期日距今天数",
+      "options": {
+        "expression": "IF({fldc6xSv8BRWRofa0oZ}, DATETIME_DIFF({fldc6xSv8BRWRofa0oZ}, TODAY(), 'day'), BLANK())",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldng1C0L7TDtjLEpsY",
+      "name": "收款次数",
+      "dbFieldName": "Shou_Kuan_Ci_Shu",
+      "type": "rollup",
+      "description": "该合同的收款次数",
+      "options": {
+        "expression": "countall({values})",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldG4T5iHXWtfhcacv2",
+      "name": "已收款金额",
+      "dbFieldName": "Yi_Shou_Kuan_Jin_E",
+      "type": "rollup",
+      "description": "该合同已收到的款项总额",
+      "options": {
+        "expression": "sum({values})",
+        "formatting": {
+          "type": "currency",
+          "precision": 2,
+          "symbol": "¥"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldSvAW0eqvIvJuOjUO",
+      "name": "到期提醒",
+      "dbFieldName": "Dao_Qi_Ti_Xing",
+      "type": "formula",
+      "description": "根据距离到期天数给出提醒",
+      "options": {
+        "expression": "IF({fldc6xSv8BRWRofa0oZ}, IF(DATETIME_DIFF({fldc6xSv8BRWRofa0oZ}, TODAY(), 'day') < 0, '已到期', IF(DATETIME_DIFF({fldc6xSv8BRWRofa0oZ}, TODAY(), 'day') <= 30, '即将到期', '正常')), '未设置')"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldJHWcQV6ik78rAyZB",
+      "name": "收款进度",
+      "dbFieldName": "Shou_Kuan_Jin_Du",
+      "type": "formula",
+      "description": "已收款占合同金额的百分比",
+      "options": {
+        "expression": "IF({fldm2HmrIptndOxL75U} > 0, ROUND({fldG4T5iHXWtfhcacv2} / {fldm2HmrIptndOxL75U} * 100, 1), 0)",
+        "formatting": {
+          "type": "percent",
+          "precision": 1
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    }
+  ]
+}

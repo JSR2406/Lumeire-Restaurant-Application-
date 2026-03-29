@@ -1,0 +1,645 @@
+{
+  "id": "tblPXZsjaVoIxdwOocs",
+  "name": "月度工资",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Yue_Du_Gong_Zi\"",
+  "fields": [
+    {
+      "id": "fldMMhVTKK4bwrD0pA8",
+      "name": "养老保险-个人",
+      "dbFieldName": "Yang_Lao_Bao_Xian",
+      "type": "number",
+      "description": "个人缴纳部分",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldlcG7St0sx3qE3jxX",
+      "name": "专项附加扣除",
+      "dbFieldName": "Zhuan_Xiang_Fu_Jia_Kou_Chu",
+      "type": "number",
+      "description": "子女教育、赡养老人、住房贷款等",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldCsW7SzUQj43bJtrt",
+      "name": "医疗保险-个人",
+      "dbFieldName": "Yi_Liao_Bao_Xian",
+      "type": "number",
+      "description": "个人缴纳部分",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldBqXxXFebPaUKTYyE",
+      "name": "失业保险-个人",
+      "dbFieldName": "Shi_Ye_Bao_Xian",
+      "type": "number",
+      "description": "个人缴纳部分",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldy73iGvis26DfIRDN",
+      "name": "住房公积金-个人",
+      "dbFieldName": "Zhu_Fang_Gong_Ji_Jin",
+      "type": "number",
+      "description": "个人缴纳部分",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld5RgZLImnkz9lwyug",
+      "name": "工资月份",
+      "dbFieldName": "Gong_Zi_Yue_Fen",
+      "type": "singleLineText",
+      "description": "格式：2024-01",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldD1e0zR4XapJjuHtS",
+      "name": "岗位津贴",
+      "dbFieldName": "Gang_Wei_Jin_Tie",
+      "type": "number",
+      "description": "岗位津贴",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldgimtjC1NM7lQT9pS",
+      "name": "绩效奖金",
+      "dbFieldName": "Ji_Xiao_Jiang_Jin",
+      "type": "number",
+      "description": "月度绩效奖金",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldOCNDfleyawDpvSDg",
+      "name": "加班费",
+      "dbFieldName": "Jia_Ban_Fei",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldaVquByyYt9bZ9E7V",
+      "name": "其他补贴",
+      "dbFieldName": "Qi_Ta_Bu_Tie",
+      "type": "number",
+      "description": "餐补、交通补贴等",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldBpXTRQdSqfi3FzkH",
+      "name": "员工",
+      "dbFieldName": "Yuan_Gong",
+      "type": "link",
+      "description": "关联员工信息",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tbl9yVwEAnhnyQdBmas",
+        "isOneWay": false,
+        "symmetricFieldId": "fld6PVczdP4BmjI3gZK",
+        "lookupFieldId": "fld1TKT4w44ZPHWbbio",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.Yue_Du_Gong_Zi",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldBpXTRQdSqfi3FzkH"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldfT4CC57QmcPWSICK",
+      "name": "基本工资",
+      "dbFieldName": "Ji_Ben_Gong_Zi",
+      "type": "number",
+      "description": "月基本工资",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldkTa42sqIhwUkmDdz",
+      "name": "应发工资",
+      "dbFieldName": "Ying_Fa_Gong_Zi",
+      "type": "formula",
+      "description": "所有收入项目合计",
+      "options": {
+        "expression": "IF(OR({fldfT4CC57QmcPWSICK}, {fldD1e0zR4XapJjuHtS}, {fldgimtjC1NM7lQT9pS}, {fldOCNDfleyawDpvSDg}, {fldaVquByyYt9bZ9E7V}), COUNTA({fldfT4CC57QmcPWSICK}) * {fldfT4CC57QmcPWSICK} + COUNTA({fldD1e0zR4XapJjuHtS}) * {fldD1e0zR4XapJjuHtS} + COUNTA({fldgimtjC1NM7lQT9pS}) * {fldgimtjC1NM7lQT9pS} + COUNTA({fldOCNDfleyawDpvSDg}) * {fldOCNDfleyawDpvSDg} + COUNTA({fldaVquByyYt9bZ9E7V}) * {fldaVquByyYt9bZ9E7V}, 0)",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld9TPSVk1cg9atoam3",
+      "name": "实发工资",
+      "dbFieldName": "Shi_Fa_Gong_Zi",
+      "type": "formula",
+      "description": "应发工资 - 五险一金 - 个人所得税",
+      "options": {
+        "expression": "{fldkTa42sqIhwUkmDdz} - {fldX2RMOVWfgFplL6pi} - {fldqUlN2IMtAhPvuOS4}",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldOgWgEpYEWXxdC6fD",
+      "name": "生育保险-公司",
+      "dbFieldName": "Sheng_Yu_Bao_Xian_Gong_Si",
+      "type": "number",
+      "description": "公司缴纳生育保险（通常0.8%，个人不缴）",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldI06XWsdOhbGfL6OX",
+      "name": "发薪日",
+      "dbFieldName": "Fa_Xin_Ri",
+      "type": "date",
+      "description": "实际发放工资的日期",
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld9CRP2hma7M8RZKKM",
+      "name": "单月应纳税所得额",
+      "dbFieldName": "Ying_Na_Shui_Suo_De_E",
+      "type": "formula",
+      "description": "本月应发工资 - 五险一金 - 5000(起征点) - 专项附加扣除",
+      "options": {
+        "expression": "MAX({fldkTa42sqIhwUkmDdz} - {fldX2RMOVWfgFplL6pi} - 5000 - (COUNTA({fldlcG7St0sx3qE3jxX}) * {fldlcG7St0sx3qE3jxX}), 0)",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldZZnWPjYJeqEB65U1",
+      "name": "住房公积金-公司",
+      "dbFieldName": "Zhu_Fang_Gong_Ji_Jin_Gong_Si",
+      "type": "number",
+      "description": "公司缴纳住房公积金（通常与个人同比例）",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldX2RMOVWfgFplL6pi",
+      "name": "五险一金-个人合计",
+      "dbFieldName": "Wu_Xian_Yi_Jin_Ge_Ren_He_Ji",
+      "type": "formula",
+      "description": "个人缴纳的五险一金总额",
+      "options": {
+        "expression": "IF(OR({fldMMhVTKK4bwrD0pA8}, {fldCsW7SzUQj43bJtrt}, {fldBqXxXFebPaUKTYyE}, {fldy73iGvis26DfIRDN}), COUNTA({fldMMhVTKK4bwrD0pA8}) * {fldMMhVTKK4bwrD0pA8} + COUNTA({fldCsW7SzUQj43bJtrt}) * {fldCsW7SzUQj43bJtrt} + COUNTA({fldBqXxXFebPaUKTYyE}) * {fldBqXxXFebPaUKTYyE} + COUNTA({fldy73iGvis26DfIRDN}) * {fldy73iGvis26DfIRDN}, 0)",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldqUlN2IMtAhPvuOS4",
+      "name": "个人所得税",
+      "dbFieldName": "Ge_Ren_Suo_De_Shui",
+      "type": "formula",
+      "description": "按照2025年个人所得税法，使用年度税率计算（单月数据按年度标准）",
+      "options": {
+        "expression": "IF({fld9CRP2hma7M8RZKKM} <= 0, 0, IF({fld9CRP2hma7M8RZKKM} <= 36000, {fld9CRP2hma7M8RZKKM} * 0.03, IF({fld9CRP2hma7M8RZKKM} <= 144000, {fld9CRP2hma7M8RZKKM} * 0.1 - 2520, IF({fld9CRP2hma7M8RZKKM} <= 300000, {fld9CRP2hma7M8RZKKM} * 0.2 - 16920, IF({fld9CRP2hma7M8RZKKM} <= 420000, {fld9CRP2hma7M8RZKKM} * 0.25 - 31920, IF({fld9CRP2hma7M8RZKKM} <= 660000, {fld9CRP2hma7M8RZKKM} * 0.3 - 52920, IF({fld9CRP2hma7M8RZKKM} <= 960000, {fld9CRP2hma7M8RZKKM} * 0.35 - 85920, {fld9CRP2hma7M8RZKKM} * 0.45 - 181920)))))))",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldpN6DA9oOA9IWmkYP",
+      "name": "社保缴费基数",
+      "dbFieldName": "She_Bao_Jiao_Fei_Ji_Shu",
+      "type": "number",
+      "description": "社保缴费基数，通常为基本工资",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldfNF05jFD5k6dhjKM",
+      "name": "养老保险-公司",
+      "dbFieldName": "Yang_Lao_Bao_Xian_Gong_Si",
+      "type": "number",
+      "description": "公司缴纳养老保险（通常16%）",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldnsKwxakwxm8p9pFg",
+      "name": "医疗保险-公司",
+      "dbFieldName": "Yi_Liao_Bao_Xian_Gong_Si",
+      "type": "number",
+      "description": "公司缴纳医疗保险（通常8%）",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldViDuo0ceAROCU7Fi",
+      "name": "失业保险-公司",
+      "dbFieldName": "Shi_Ye_Bao_Xian_Gong_Si",
+      "type": "number",
+      "description": "公司缴纳失业保险（通常0.5%）",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldn83aHODUQAe0D7lD",
+      "name": "工伤保险-公司",
+      "dbFieldName": "Gong_Shang_Bao_Xian_Gong_Si",
+      "type": "number",
+      "description": "公司缴纳工伤保险（通常0.2%-1.9%，个人不缴）",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldrfmP4zfAlBFyovu8",
+      "name": "五险一金-公司合计",
+      "dbFieldName": "Wu_Xian_Yi_Jin_Gong_Si_He_Ji",
+      "type": "formula",
+      "description": "公司缴纳的五险一金总额",
+      "options": {
+        "expression": "IF(OR({fldfNF05jFD5k6dhjKM}, {fldnsKwxakwxm8p9pFg}, {fldViDuo0ceAROCU7Fi}, {fldn83aHODUQAe0D7lD}, {fldOgWgEpYEWXxdC6fD}, {fldZZnWPjYJeqEB65U1}), COUNTA({fldfNF05jFD5k6dhjKM}) * {fldfNF05jFD5k6dhjKM} + COUNTA({fldnsKwxakwxm8p9pFg}) * {fldnsKwxakwxm8p9pFg} + COUNTA({fldViDuo0ceAROCU7Fi}) * {fldViDuo0ceAROCU7Fi} + COUNTA({fldn83aHODUQAe0D7lD}) * {fldn83aHODUQAe0D7lD} + COUNTA({fldOgWgEpYEWXxdC6fD}) * {fldOgWgEpYEWXxdC6fD} + COUNTA({fldZZnWPjYJeqEB65U1}) * {fldZZnWPjYJeqEB65U1}, 0)",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldgRXbJGzPoZXSYqwq",
+      "name": "用工总成本",
+      "dbFieldName": "Yong_Gong_Zong_Cheng_Ben",
+      "type": "formula",
+      "description": "应发工资 + 公司缴纳的五险一金",
+      "options": {
+        "expression": "{fldkTa42sqIhwUkmDdz} + IF(OR({fldfNF05jFD5k6dhjKM}, {fldnsKwxakwxm8p9pFg}, {fldViDuo0ceAROCU7Fi}, {fldn83aHODUQAe0D7lD}, {fldOgWgEpYEWXxdC6fD}, {fldZZnWPjYJeqEB65U1}), COUNTA({fldfNF05jFD5k6dhjKM}) * {fldfNF05jFD5k6dhjKM} + COUNTA({fldnsKwxakwxm8p9pFg}) * {fldnsKwxakwxm8p9pFg} + COUNTA({fldViDuo0ceAROCU7Fi}) * {fldViDuo0ceAROCU7Fi} + COUNTA({fldn83aHODUQAe0D7lD}) * {fldn83aHODUQAe0D7lD} + COUNTA({fldOgWgEpYEWXxdC6fD}) * {fldOgWgEpYEWXxdC6fD} + COUNTA({fldZZnWPjYJeqEB65U1}) * {fldZZnWPjYJeqEB65U1}, 0)",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldhkoX8r1kcwz5uLoS",
+      "name": "员工姓名",
+      "dbFieldName": "Yuan_Gong_Xing_Ming",
+      "type": "singleLineText",
+      "description": "从员工表lookup姓名",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": true,
+      "isComputed": true,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fld7XYDl8YBrNIASUY9",
+      "name": "银行卡号",
+      "dbFieldName": "Yin_Xing_Qia_Hao",
+      "type": "singleLineText",
+      "description": "从员工表lookup银行卡号",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": true,
+      "isComputed": true,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fldFkq68Q6gmVtdjr6Y",
+      "name": "开户银行",
+      "dbFieldName": "Kai_Hu_Yin_Xing",
+      "type": "singleLineText",
+      "description": "从员工表lookup开户银行",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": true,
+      "isComputed": true,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fldft7AQJyfc2A0Cvgp",
+      "name": "实发工资（累计法）",
+      "dbFieldName": "Shi_Fa_Gong_Zi_Lei_Ji_Fa",
+      "type": "formula",
+      "description": "应发工资 - 五险一金 - 本月应预扣预缴税额（按累计预扣预缴法计算）",
+      "options": {
+        "expression": "{fldkTa42sqIhwUkmDdz} - {fldX2RMOVWfgFplL6pi} - COUNTA({fldR1YdxhBGFr9OyN9T}) * {fldR1YdxhBGFr9OyN9T}",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldTjPVx6HNkjmxz2aD",
+      "name": "累计适用税率",
+      "dbFieldName": "Lei_Ji_Gua_Yong_Shui_Lu",
+      "type": "formula",
+      "description": "根据本年累计应纳税所得额确定的税率档次（累计预扣预缴法）",
+      "options": {
+        "expression": "IF({fldljP4MvJXhMZ2QSuA} <= 0, '免税', IF({fldljP4MvJXhMZ2QSuA} <= 36000, '3%', IF({fldljP4MvJXhMZ2QSuA} <= 144000, '10%', IF({fldljP4MvJXhMZ2QSuA} <= 300000, '20%', IF({fldljP4MvJXhMZ2QSuA} <= 420000, '25%', IF({fldljP4MvJXhMZ2QSuA} <= 660000, '30%', IF({fldljP4MvJXhMZ2QSuA} <= 960000, '35%', '45%')))))))"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldLW3pmpQOVPkVWSb5",
+      "name": "本年累计应纳税额",
+      "dbFieldName": "Ben_Nian_Lei_Ji_Ying_Na_Shui_E",
+      "type": "number",
+      "description": "由自动化计算：根据年度累计应纳税所得额计算的本纳税年度累计应纳税额（按发薪日）",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "decimal"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldljP4MvJXhMZ2QSuA",
+      "name": "年度累计应纳税所得额",
+      "dbFieldName": "Ben_Nian_Lei_Ji_Ying_Na_Shui_Suo_De_E",
+      "type": "number",
+      "description": "由自动化计算：按发薪日所属纳税年度，从年初第一次发薪至当前发薪的累计应纳税所得额（累计预扣预缴法）",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "decimal"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldc7RELVBSiSa6dMvJ",
+      "name": "本年累计已缴税额",
+      "dbFieldName": "Ben_Nian_Lei_Ji_Yi_Jiao_Shui_E",
+      "type": "number",
+      "description": "由自动化计算：本纳税年度截止上次发薪已预扣预缴的税额合计（按发薪日顺序）",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "decimal"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldR1YdxhBGFr9OyN9T",
+      "name": "本月应预扣预缴税额",
+      "dbFieldName": "Ben_Yue_Ying_Yu_Kou_Yu_Jiao_Shui_E",
+      "type": "number",
+      "description": "由自动化计算：本次发薪应预扣预缴税额 = 本纳税年度累计应纳税额 - 本纳税年度累计已缴税额（按发薪日）",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "decimal"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldim5GdXGz48KXxd5S",
+      "name": "纳税年度",
+      "dbFieldName": "Na_Shui_Nian_Du",
+      "type": "formula",
+      "description": "根据发薪日提取的纳税年度（个税按发薪日所属年度计算）",
+      "options": {
+        "expression": "YEAR({fldI06XWsdOhbGfL6OX})",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "id": "tblEBIv66Xc6dz5jMci",
+  "name": "Sales Pipeline",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Sales_Pipeline\"",
+  "fields": [
+    {
+      "id": "fldR7hhQz1WhzFKmnUc",
+      "name": "Customer Name",
+      "dbFieldName": "Customer_Name",
+      "type": "singleLineText",
+      "description": "Lead/customer name",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldoVCJ4Ly1tEziR0GV",
+      "name": "Company",
+      "dbFieldName": "Company",
+      "type": "singleLineText",
+      "description": "Company name",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldRIs5HoQbShxC8dLE",
+      "name": "Email",
+      "dbFieldName": "Email",
+      "type": "singleLineText",
+      "description": "Contact email",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldwAUKXSP63CCxJtxw",
+      "name": "Stage",
+      "dbFieldName": "Stage",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Lead",
+        "Qualified",
+        "Demo Scheduled",
+        "Proposal Sent",
+        "Negotiation",
+        "Contract Sent",
+        "Closed Won",
+        "Closed Lost"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldqE2XrFbnJGh1jCTO",
+      "name": "Deal Size",
+      "dbFieldName": "Deal_Size",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 0,
+          "type": "currency",
+          "symbol": "$"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldFyB7UI2qPO4PtTFO",
+      "name": "Probability",
+      "dbFieldName": "Probability",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 0,
+          "type": "percent"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld1XhFCjY8P3KGVTNY",
+      "name": "Expected Close Date",
+      "dbFieldName": "Expected_Close_Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldemwzYTEgHNScNDDR",
+      "name": "Owner",
+      "dbFieldName": "Owner",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Gary",
+        "Amy",
+        "Ben"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldWi1E2JiQowsYtzu0",
+      "name": "Source",
+      "dbFieldName": "Source",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Website",
+        "LinkedIn",
+        "Referral",
+        "Event",
+        "Cold Email",
+        "Partner",
+        "Webinar"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldYQxiejXVcpA24PSS",
+      "name": "Notes",
+      "dbFieldName": "Notes",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldhI7Jd98eZ6PQvoMS",
+      "name": "Original File",
+      "dbFieldName": "Original_File",
+      "type": "attachment",
+      "description": "Source data file",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldFdF4oPyEYNLT7rzI",
+      "name": "Weighted Value",
+      "dbFieldName": "Weighted_Value",
+      "type": "formula",
+      "description": "Deal Size × Probability",
+      "options": {
+        "expression": "ROUND({fldqE2XrFbnJGh1jCTO} * {fldFyB7UI2qPO4PtTFO}, 0)",
+        "formatting": {
+          "type": "currency",
+          "symbol": "$",
+          "precision": 0
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldfq80gCmGSPmFRxhf",
+      "name": "Days to Close",
+      "dbFieldName": "Days_to_Close",
+      "type": "formula",
+      "description": "Days until expected close date",
+      "options": {
+        "expression": "IF({fld1XhFCjY8P3KGVTNY}, DATETIME_DIFF({fld1XhFCjY8P3KGVTNY}, TODAY(), 'day'), BLANK())",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldaGi1WrywqH23wlla",
+      "name": "Status",
+      "dbFieldName": "Status",
+      "type": "formula",
+      "description": "Open, Won, or Lost",
+      "options": {
+        "expression": "IF({fldwAUKXSP63CCxJtxw} = 'Closed Won', '✅ Won', IF({fldwAUKXSP63CCxJtxw} = 'Closed Lost', '❌ Lost', '🔄 Open'))"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    }
+  ]
+}

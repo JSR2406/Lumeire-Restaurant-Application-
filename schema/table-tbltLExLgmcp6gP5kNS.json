@@ -1,0 +1,331 @@
+{
+  "id": "tbltLExLgmcp6gP5kNS",
+  "name": "Makeup Products",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Cai_Zhuang_Chan_Pin_Ku\"",
+  "fields": [
+    {
+      "id": "fldKO9CxLBsqaoGOi8z",
+      "name": "Brand",
+      "dbFieldName": "Pin_Pai",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld4f2YQ0RZxukLWQJ4",
+      "name": "Color Palette",
+      "dbFieldName": "Se_Xi",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Warm-Coral Orange",
+        "Warm-Orange Red",
+        "Warm-Brick Red",
+        "Cool-Rose Pink",
+        "Cool-Plum Purple",
+        "Cool-Berry Red",
+        "Neutral-Nude",
+        "Neutral-Mauve",
+        "Neutral-Brown"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldy98EyOvcdapRS3o4",
+      "name": "Color Description",
+      "dbFieldName": "Yan_Se_Miao_Shu",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldfKNJX4G0Nak1QxMs",
+      "name": "Purchase Date",
+      "dbFieldName": "Gou_Mai_Ri_Qi",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY/MM/DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldXm7k86J6WCCxyaM7",
+      "name": "Opening Date",
+      "dbFieldName": "Kai_Feng_Ri_Qi",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY/MM/DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldTnLuT6SxG7xXDBVr",
+      "name": "Shelf Life (Months)",
+      "dbFieldName": "Bao_Zhi_Qi_Yue",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldOcdNk767khO0BWI8",
+      "name": "Product Photo",
+      "dbFieldName": "Chan_Pin_Zhao_Pian",
+      "type": "attachment",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldsoDrJtr5WcJkI3Yp",
+      "name": "Price",
+      "dbFieldName": "Jie_Ge",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": "$"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld5BePJ65dzCAWFSiR",
+      "name": "Usage Frequency",
+      "dbFieldName": "Shi_Yong_Pin_Lu",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Daily",
+        "Often",
+        "Occasionally",
+        "Rarely"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldlqKiZ9h4OhjSGRTj",
+      "name": "Notes",
+      "dbFieldName": "Bei_Zhu",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldRiQNP6ipeWky1nde",
+      "name": "Days to Expiration",
+      "dbFieldName": "Ju_Chi_Guo_Qi_Tian_Shu",
+      "type": "formula",
+      "description": null,
+      "options": {
+        "expression": "IF({fldM7ckORfEJfaHurG1}, DATETIME_DIFF({fldM7ckORfEJfaHurG1}, TODAY(), 'day'), BLANK())",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "flduLrzjqadfmtq0mo0",
+      "name": "Expiration Status",
+      "dbFieldName": "Guo_Qi_Zhuang_Tai",
+      "type": "formula",
+      "description": null,
+      "options": {
+        "expression": "IF({fldM7ckORfEJfaHurG1}, IF({fldRiQNP6ipeWky1nde} < 0, 'Expired ⚠️', IF({fldRiQNP6ipeWky1nde} <= 180, 'Expiring Soon 🔔', 'Good ✅')), 'Not Set')"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldNXQBVKTBJE6HzIYi",
+      "name": "Makeup Looks",
+      "dbFieldName": "Se_Xi_Da_Pei_Fang_An",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "manyMany",
+        "foreignTableId": "tblMvHrzOt2BYRqXfTU",
+        "lookupFieldId": "fldRu5DSLiZFYKSCZ0q",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.junction_fld4b6tGw85i5o8v2sv_fldNXQBVKTBJE6HzIYi",
+        "selfKeyName": "__fk_fld4b6tGw85i5o8v2sv",
+        "foreignKeyName": "__fk_fldNXQBVKTBJE6HzIYi",
+        "symmetricFieldId": "fld4b6tGw85i5o8v2sv"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldqgOfcWyBB9T4hQEW",
+      "name": "Makeup Looks (Blush)",
+      "dbFieldName": "Se_Xi_Da_Pei_Fang_An1765780451783",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "manyMany",
+        "foreignTableId": "tblMvHrzOt2BYRqXfTU",
+        "lookupFieldId": "fldRu5DSLiZFYKSCZ0q",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.junction_fldxNdDKrzwfAIaXq58_fldqgOfcWyBB9T4hQEW",
+        "selfKeyName": "__fk_fldxNdDKrzwfAIaXq58",
+        "foreignKeyName": "__fk_fldqgOfcWyBB9T4hQEW",
+        "symmetricFieldId": "fldxNdDKrzwfAIaXq58"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldX12mnVAtbIzl76Nh",
+      "name": "Makeup Looks (Eyeshadow)",
+      "dbFieldName": "Se_Xi_Da_Pei_Fang_An1765780456229",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "manyMany",
+        "foreignTableId": "tblMvHrzOt2BYRqXfTU",
+        "lookupFieldId": "fldRu5DSLiZFYKSCZ0q",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.junction_fldIi6MGF7wzOsBbJPF_fldX12mnVAtbIzl76Nh",
+        "selfKeyName": "__fk_fldIi6MGF7wzOsBbJPF",
+        "foreignKeyName": "__fk_fldX12mnVAtbIzl76Nh",
+        "symmetricFieldId": "fldIi6MGF7wzOsBbJPF"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldLUsYrynwkERFVC6w",
+      "name": "Product Name",
+      "dbFieldName": "Chan_Pin_Ming_Cheng",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldyuhkAXUcPJoL2Bxl",
+      "name": "Product Type",
+      "dbFieldName": "Chan_Pin_Lei_Xing",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Lipstick",
+        "Blush",
+        "Eyeshadow Palette",
+        "Foundation",
+        "Mascara",
+        "Eyeliner",
+        "Eyebrow Pencil",
+        "Highlighter",
+        "Contour"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldM7ckORfEJfaHurG1",
+      "name": "Expiration Date",
+      "dbFieldName": "Guo_Qi_Ri_Qi",
+      "type": "formula",
+      "description": null,
+      "options": {
+        "expression": "IF(AND({fldXm7k86J6WCCxyaM7}, {fldTnLuT6SxG7xXDBVr}), DATE_ADD({fldXm7k86J6WCCxyaM7}, {fldTnLuT6SxG7xXDBVr}, 'month'), IF({fldTnLuT6SxG7xXDBVr}, DATE_ADD({fldfKNJX4G0Nak1QxMs}, {fldTnLuT6SxG7xXDBVr}, 'month'), BLANK()))",
+        "formatting": {
+          "date": "YYYY/MM/DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "flddhUhi9fRlRYhPWkW",
+      "name": "Makeup Looks",
+      "dbFieldName": "Makeup_Looks",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "manyMany",
+        "foreignTableId": "tblMvHrzOt2BYRqXfTU",
+        "lookupFieldId": "fldRu5DSLiZFYKSCZ0q",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.junction_fldt9JU8bWltKSiw2C6_flddhUhi9fRlRYhPWkW",
+        "selfKeyName": "__fk_fldt9JU8bWltKSiw2C6",
+        "foreignKeyName": "__fk_flddhUhi9fRlRYhPWkW",
+        "symmetricFieldId": "fldt9JU8bWltKSiw2C6"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    }
+  ]
+}

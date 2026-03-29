@@ -1,0 +1,166 @@
+{
+  "id": "tbl1otasEZs0ZbHYo9h",
+  "name": "Iceland Trip - Expenses",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Iceland_Trip_Expenses\"",
+  "fields": [
+    {
+      "id": "fldTb6vP6gNXsO2L9Q2",
+      "name": "Description",
+      "dbFieldName": "Description",
+      "type": "singleLineText",
+      "description": "What was purchased",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldyUNwA1JjvwNjB80F",
+      "name": "Amount",
+      "dbFieldName": "Amount",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": "$"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldnmVJ7wZcbwwZxxD1",
+      "name": "Date",
+      "dbFieldName": "Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "HH:mm",
+          "timeZone": "Atlantic/Reykjavik"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldfspsAMEaZR1iOM1l",
+      "name": "Category",
+      "dbFieldName": "Category",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Accommodation",
+        "Transportation",
+        "Food",
+        "Activities",
+        "Shopping",
+        "Other"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldOsS4TusGLxwM7MJw",
+      "name": "Paid By",
+      "dbFieldName": "Paid_By",
+      "type": "singleLineText",
+      "description": "Who paid for this",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldMeEvkbcmseP8ooqa",
+      "name": "Receipt",
+      "dbFieldName": "Receipt",
+      "type": "attachment",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldUJgoBYVYcECY7Xzh",
+      "name": "Notes",
+      "dbFieldName": "Notes",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldR0UHSuTZEnTVXZA5",
+      "name": "Split Among",
+      "dbFieldName": "Split_Among",
+      "type": "multipleSelect",
+      "description": null,
+      "options": [
+        "All 6 people",
+        "Custom"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldYg2O7fAymBrifltu",
+      "name": "Related to Itinerary Day",
+      "dbFieldName": "Related_to_Itinerary_Day",
+      "type": "link",
+      "description": "Which day this expense is for",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tblL03EF7zktMKqErE7",
+        "isOneWay": false,
+        "symmetricFieldId": "fldug39mYOrsTV0sZtf",
+        "lookupFieldId": "fldYbdXTOSdhfbkU4Xq",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.Iceland_Trip_Expenses",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldYg2O7fAymBrifltu"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldj5ZivYbyV25Pvpxz",
+      "name": "Per Person",
+      "dbFieldName": "Per_Person",
+      "type": "formula",
+      "description": "Amount divided by 6 people",
+      "options": {
+        "expression": "ROUND({fldyUNwA1JjvwNjB80F} / 6, 2)",
+        "formatting": {
+          "type": "currency",
+          "symbol": "$",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    }
+  ]
+}

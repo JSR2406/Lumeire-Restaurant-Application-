@@ -1,0 +1,139 @@
+{
+  "id": "tblDXlnehKNRyazfQOP",
+  "name": "Iceland Trip - Photos",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Iceland_Trip_Photos\"",
+  "fields": [
+    {
+      "id": "fld9j6NBLAAxDdLWvJu",
+      "name": "Title",
+      "dbFieldName": "Title",
+      "type": "singleLineText",
+      "description": "Photo caption",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldfRhR9aFGAGW4PrTs",
+      "name": "Photos",
+      "dbFieldName": "Photos",
+      "type": "attachment",
+      "description": "Upload your travel photos",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldZjtIFk68trKLn75M",
+      "name": "Location",
+      "dbFieldName": "Location",
+      "type": "singleLineText",
+      "description": "Where was this taken",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldHRnnANJ0mF6i7Per",
+      "name": "Date Taken",
+      "dbFieldName": "Date_Taken",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "HH:mm",
+          "timeZone": "Atlantic/Reykjavik"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldN8fwFB3WNyU6Ydv8",
+      "name": "Uploaded By",
+      "dbFieldName": "Uploaded_By",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldg9EdDxiQkryRJpTb",
+      "name": "Tags",
+      "dbFieldName": "Tags",
+      "type": "multipleSelect",
+      "description": null,
+      "options": [
+        "Aurora",
+        "Waterfall",
+        "Glacier",
+        "Hot Spring",
+        "Group Photo",
+        "Landscape",
+        "Wildlife"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldAtPMYbBoGd1Qhct6",
+      "name": "Description",
+      "dbFieldName": "Description",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldjNdn25rLLagJKP3m",
+      "name": "Favorite",
+      "dbFieldName": "Favorite",
+      "type": "checkbox",
+      "description": "Mark as favorite",
+      "options": {},
+      "cellValueType": "boolean",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldbJj5tNt0xNaOv2KR",
+      "name": "Related to Itinerary Day",
+      "dbFieldName": "Related_to_Itinerary_Day",
+      "type": "link",
+      "description": "Which day these photos are from",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tblL03EF7zktMKqErE7",
+        "isOneWay": false,
+        "symmetricFieldId": "fldrCF1jXHltYJ0D1vw",
+        "lookupFieldId": "fldYbdXTOSdhfbkU4Xq",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.Iceland_Trip_Photos",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldbJj5tNt0xNaOv2KR"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}

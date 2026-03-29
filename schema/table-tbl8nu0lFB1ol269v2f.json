@@ -1,0 +1,160 @@
+{
+  "id": "tbl8nu0lFB1ol269v2f",
+  "name": "Time Off Requests",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Time_Off_Requests\"",
+  "fields": [
+    {
+      "id": "fldNXgGxV7r5vFnvqgH",
+      "name": "Request ID",
+      "dbFieldName": "Request_ID",
+      "type": "autoNumber",
+      "description": null,
+      "options": {
+        "expression": "AUTO_NUMBER()",
+        "prefix": "TO-",
+        "startFrom": 1000
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldMJcSTobri49kLZ1X",
+      "name": "Request Date",
+      "dbFieldName": "Request_Date",
+      "type": "createdTime",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "UTC"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldI376p9vSayeA6JyC",
+      "name": "Start Date",
+      "dbFieldName": "Start_Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld3Yfsu4JznGVKkvav",
+      "name": "End Date",
+      "dbFieldName": "End_Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldDVfHSX5VcKMhwxZk",
+      "name": "Reason",
+      "dbFieldName": "Reason",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Vacation",
+        "Sick Leave",
+        "Personal",
+        "Emergency"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld9JZcHVpc0VNNde20",
+      "name": "Notes",
+      "dbFieldName": "Notes",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldMdLomQ9ySK49A5WI",
+      "name": "Status",
+      "dbFieldName": "Status",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldf6mEVvyDKuKeZymM",
+      "name": "Approved By",
+      "dbFieldName": "Approved_By",
+      "type": "user",
+      "description": null,
+      "options": {
+        "isMultiple": false,
+        "shouldNotify": true
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldlNyfIH8qklctLMxk",
+      "name": "Barista",
+      "dbFieldName": "Barista",
+      "type": "link",
+      "description": "Link time off request to barista",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tbluKh77AImnulYTUDh",
+        "isOneWay": false,
+        "symmetricFieldId": "fldSFvBMPcZjhF2cE8z",
+        "lookupFieldId": "fldp3K9ToyEW7cqF0f9",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.Time_Off_Requests",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldlNyfIH8qklctLMxk"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}

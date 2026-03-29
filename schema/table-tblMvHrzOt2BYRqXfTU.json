@@ -1,0 +1,171 @@
+{
+  "id": "tblMvHrzOt2BYRqXfTU",
+  "name": "Makeup Looks",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Se_Xi_Da_Pei_Fang_An\"",
+  "fields": [
+    {
+      "id": "fldRu5DSLiZFYKSCZ0q",
+      "name": "Look Name",
+      "dbFieldName": "Fang_An_Ming_Cheng",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldI05VU66wYy8EQkTT",
+      "name": "Created Time",
+      "dbFieldName": "Chuang_Jian_Shi_Jian",
+      "type": "createdTime",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY/MM/DD",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldqGTbNwODrp0GxwAO",
+      "name": "Style",
+      "dbFieldName": "Feng_Ge",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Daily Fresh",
+        "Office Professional",
+        "Romantic Date",
+        "Party Glam"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldIZJTWdtAFyELC4wd",
+      "name": "Description",
+      "dbFieldName": "Miao_Shu",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld4b6tGw85i5o8v2sv",
+      "name": "Lipstick",
+      "dbFieldName": "Kou_Hong",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "manyMany",
+        "foreignTableId": "tbltLExLgmcp6gP5kNS",
+        "filter": {
+          "conjunction": "and",
+          "filterSet": [
+            {
+              "fieldId": "fldyuhkAXUcPJoL2Bxl",
+              "value": "Lipstick",
+              "operator": "is"
+            }
+          ]
+        },
+        "isOneWay": false,
+        "symmetricFieldId": "fldNXQBVKTBJE6HzIYi",
+        "lookupFieldId": "fldLUsYrynwkERFVC6w",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.junction_fld4b6tGw85i5o8v2sv_fldNXQBVKTBJE6HzIYi",
+        "selfKeyName": "__fk_fldNXQBVKTBJE6HzIYi",
+        "foreignKeyName": "__fk_fld4b6tGw85i5o8v2sv"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldIi6MGF7wzOsBbJPF",
+      "name": "Eyeshadow Palette",
+      "dbFieldName": "Makeup_Products1765786012281",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "manyMany",
+        "foreignTableId": "tbltLExLgmcp6gP5kNS",
+        "lookupFieldId": "fldLUsYrynwkERFVC6w",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.junction_fldIi6MGF7wzOsBbJPF_fldX12mnVAtbIzl76Nh",
+        "selfKeyName": "__fk_fldX12mnVAtbIzl76Nh",
+        "foreignKeyName": "__fk_fldIi6MGF7wzOsBbJPF",
+        "symmetricFieldId": "fldX12mnVAtbIzl76Nh"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldpMZk8RcRgLZE0B9p",
+      "name": "Look Photos",
+      "dbFieldName": "Zhuang_Zao",
+      "type": "attachment",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldxNdDKrzwfAIaXq58",
+      "name": "Makeup Products",
+      "dbFieldName": "Makeup_Products",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "manyMany",
+        "foreignTableId": "tbltLExLgmcp6gP5kNS",
+        "lookupFieldId": "fldLUsYrynwkERFVC6w",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.junction_fldxNdDKrzwfAIaXq58_fldqgOfcWyBB9T4hQEW",
+        "selfKeyName": "__fk_fldqgOfcWyBB9T4hQEW",
+        "foreignKeyName": "__fk_fldxNdDKrzwfAIaXq58",
+        "symmetricFieldId": "fldqgOfcWyBB9T4hQEW"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldt9JU8bWltKSiw2C6",
+      "name": "foundation",
+      "dbFieldName": "Makeup_Products1765786007614",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "manyMany",
+        "foreignTableId": "tbltLExLgmcp6gP5kNS",
+        "lookupFieldId": "fldLUsYrynwkERFVC6w",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.junction_fldt9JU8bWltKSiw2C6_flddhUhi9fRlRYhPWkW",
+        "selfKeyName": "__fk_flddhUhi9fRlRYhPWkW",
+        "foreignKeyName": "__fk_fldt9JU8bWltKSiw2C6",
+        "symmetricFieldId": "flddhUhi9fRlRYhPWkW"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    }
+  ]
+}

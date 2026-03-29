@@ -1,0 +1,217 @@
+{
+  "id": "tblA28H8X9sETWGQl90",
+  "name": "Amazon Customer Reviews",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Amazon_Customer_Reviews\"",
+  "fields": [
+    {
+      "id": "fldsU61cy9HI5CT8Mrp",
+      "name": "Review ID",
+      "dbFieldName": "Review_ID",
+      "type": "singleLineText",
+      "description": "Unique review identifier",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldCuHzN1wn7Vn1O7BK",
+      "name": "Product Name",
+      "dbFieldName": "Product_Name",
+      "type": "singleLineText",
+      "description": "Name of the product being reviewed",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldeFn5laz9EbYrluuB",
+      "name": "Customer Name",
+      "dbFieldName": "Customer_Name",
+      "type": "singleLineText",
+      "description": "Name of the customer",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldD45EEC5WsxCs4VJd",
+      "name": "Rating",
+      "dbFieldName": "Rating",
+      "type": "number",
+      "description": "Star rating (1-5)",
+      "options": {
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldoBYQcd6P4Py3RBbs",
+      "name": "Review Text",
+      "dbFieldName": "Review_Text",
+      "type": "longText",
+      "description": "Full review content",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldBfuUT3tllFpgjWBl",
+      "name": "Review Date",
+      "dbFieldName": "Review_Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldDDVpGfKhdqs2gj8O",
+      "name": "Sentiment",
+      "dbFieldName": "Sentiment",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Positive",
+        "Neutral",
+        "Negative",
+        "Mixed"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldaPk66gtK4G6bjkvw",
+      "name": "Draft Reply",
+      "dbFieldName": "Draft_Reply",
+      "type": "longText",
+      "description": "AI-generated draft response to the review",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld0Vf6KYtbPHB9ApxY",
+      "name": "Priority",
+      "dbFieldName": "Priority",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "High",
+        "Medium",
+        "Low"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld8S9OneFmaeMNDLG9",
+      "name": "Original File",
+      "dbFieldName": "Original_File",
+      "type": "attachment",
+      "description": "Reference to source file",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldOMA0lSoRPcrfinOw",
+      "name": "Feedback Tags",
+      "dbFieldName": "Feedback_Tags",
+      "type": "multipleSelect",
+      "description": null,
+      "options": [
+        "Quality Issue",
+        "Shipping Problem",
+        "Product Praise",
+        "Price Concern",
+        "Customer Service",
+        "Feature Request",
+        "Defective Item",
+        "Fast Delivery",
+        "Value for Money",
+        "Sizing Issue"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldpn23HkCD9lo1xDoC",
+      "name": "Days Since Review",
+      "dbFieldName": "Days_Since_Review",
+      "type": "formula",
+      "description": "Number of days since the review was posted",
+      "options": {
+        "expression": "IF({fldBfuUT3tllFpgjWBl}, DATETIME_DIFF(TODAY(), {fldBfuUT3tllFpgjWBl}, 'day'), BLANK())",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldpJ0Z8kNumpqqIEPk",
+      "name": "Review Summary",
+      "dbFieldName": "Review_Summary",
+      "type": "formula",
+      "description": "Quick overview of rating, sentiment and customer",
+      "options": {
+        "expression": "CONCATENATE({fldD45EEC5WsxCs4VJd}, ' ⭐ - ', {fldDDVpGfKhdqs2gj8O}, ' | ', {fldeFn5laz9EbYrluuB})"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldbWWyZOolos8kTvrZ",
+      "name": "Needs Response",
+      "dbFieldName": "Needs_Response",
+      "type": "formula",
+      "description": "Response urgency indicator",
+      "options": {
+        "expression": "IF(OR({fldD45EEC5WsxCs4VJd} <= 2, {fldDDVpGfKhdqs2gj8O} = 'Negative'), '🚨 Urgent', IF({fldD45EEC5WsxCs4VJd} = 3, '⚠️ Follow-up', '✅ Standard'))"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    }
+  ]
+}

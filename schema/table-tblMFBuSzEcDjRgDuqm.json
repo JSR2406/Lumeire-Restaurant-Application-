@@ -1,0 +1,179 @@
+{
+  "id": "tblMFBuSzEcDjRgDuqm",
+  "name": "CRM - Contacts",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"CRM_Contacts\"",
+  "fields": [
+    {
+      "id": "fldx4syHWCXWIFIacQJ",
+      "name": "Full Name",
+      "dbFieldName": "Full_Name",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "flddKPhyqg5lUZHLowj",
+      "name": "Email",
+      "dbFieldName": "Email",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld2Kzs47XR6DKtJ0Jb",
+      "name": "Phone",
+      "dbFieldName": "Phone",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldnUKd3VmdlSfoAJM6",
+      "name": "Job Title",
+      "dbFieldName": "Job_Title",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldTRpm0pYjpx2ciBEk",
+      "name": "Department",
+      "dbFieldName": "Department",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Executive",
+        "Sales",
+        "Marketing",
+        "Finance",
+        "IT",
+        "Operations"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld8NtjixrXfxVxEXRA",
+      "name": "LinkedIn",
+      "dbFieldName": "LinkedIn",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldiuA7kDc3MdB1FqM8",
+      "name": "Decision Maker",
+      "dbFieldName": "Decision_Maker",
+      "type": "checkbox",
+      "description": "Is this person a decision maker?",
+      "options": {},
+      "cellValueType": "boolean",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldWlNTdSVtNY2rP7vg",
+      "name": "Created Date",
+      "dbFieldName": "Created_Date",
+      "type": "createdTime",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "UTC"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldd7R441zGKNIKpRpI",
+      "name": "Company",
+      "dbFieldName": "Company",
+      "type": "link",
+      "description": "Link contact to company",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tblAlIfTmQUQQRWlcxP",
+        "isOneWay": false,
+        "symmetricFieldId": "fldBGR2c7DPbb8H7HvM",
+        "lookupFieldId": "fldFpB8U5ixdMCfKZCD",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Contacts",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldd7R441zGKNIKpRpI"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldngP4Bw4aJV2rmhBG",
+      "name": "CRM - Deals",
+      "dbFieldName": "CRM_Deals",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tblGj6hp8mV1AFSHll7",
+        "lookupFieldId": "fldVPtTFgnDf8dLvvgs",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Deals",
+        "selfKeyName": "__fk_fldG1rTcAw9mnw39PqZ",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldG1rTcAw9mnw39PqZ"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldl6Ivv1gM90Ak40lP",
+      "name": "CRM - Activities",
+      "dbFieldName": "CRM_Activities",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tblL5BmY6I2MLWqvBmW",
+        "lookupFieldId": "fld58dkl6yWeJHxuPyn",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Activities",
+        "selfKeyName": "__fk_fldBtkVb3KxR4KVXU84",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldBtkVb3KxR4KVXU84"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    }
+  ]
+}

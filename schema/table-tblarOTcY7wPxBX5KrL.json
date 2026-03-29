@@ -1,0 +1,172 @@
+{
+  "id": "tblarOTcY7wPxBX5KrL",
+  "name": "Shift Schedules",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Shift_Schedules\"",
+  "fields": [
+    {
+      "id": "fldnwfeJgaLW73gBMxM",
+      "name": "Assigned Barista",
+      "dbFieldName": "Assigned_Barista",
+      "type": "link",
+      "description": "Link shift to barista",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tbluKh77AImnulYTUDh",
+        "isOneWay": false,
+        "symmetricFieldId": "fldGNArRr8QLjFa2yB1",
+        "lookupFieldId": "fldp3K9ToyEW7cqF0f9",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.Shift_Schedules",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldnwfeJgaLW73gBMxM"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldrpfSvi59SHsOuWmD",
+      "name": "Shift Name",
+      "dbFieldName": "Shift_Name",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldq1NoMDY7OG7fGaVT",
+      "name": "Date",
+      "dbFieldName": "Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldz7gZ69gJ8bxYAPdH",
+      "name": "Day of Week",
+      "dbFieldName": "Day_of_Week",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldkFhPqFBfZvJjm3k4",
+      "name": "Shift Type",
+      "dbFieldName": "Shift_Type",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Morning (6AM-2PM)",
+        "Afternoon (2PM-10PM)",
+        "Full Day (6AM-10PM)"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldC0HZPnxt3NV2Qzp7",
+      "name": "Start Time",
+      "dbFieldName": "Start_Time",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldBYqbSsVE3uuKZOov",
+      "name": "End Time",
+      "dbFieldName": "End_Time",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldGYO3ueqiBTdbLvJF",
+      "name": "Hours",
+      "dbFieldName": "Hours",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 1,
+          "type": "decimal"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldePvLL90J8dWfhu2q",
+      "name": "Status",
+      "dbFieldName": "Status",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Scheduled",
+        "Confirmed",
+        "Completed",
+        "Cancelled"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldzdTQRFrbsGn235R8",
+      "name": "Labor Cost",
+      "dbFieldName": "Labor_Cost",
+      "type": "formula",
+      "description": "Calculated shift cost based on hours and hourly rate",
+      "options": {
+        "expression": "IF({fldGYO3ueqiBTdbLvJF}, {fldGYO3ueqiBTdbLvJF} * 15, 0)",
+        "formatting": {
+          "type": "currency",
+          "symbol": "$",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    }
+  ]
+}

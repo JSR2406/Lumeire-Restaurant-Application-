@@ -1,0 +1,203 @@
+{
+  "id": "tblRKz4H7flO88kmiCj",
+  "name": "Bills & Payments",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Bills_Payments\"",
+  "fields": [
+    {
+      "id": "fldpwGQfkSYKfbbOi3K",
+      "name": "Bill Name",
+      "dbFieldName": "Bill_Name",
+      "type": "singleLineText",
+      "description": "Name of the bill (e.g., Electricity, Rent, Internet)",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "flduoHZUshWyGNuCqOS",
+      "name": "Category",
+      "dbFieldName": "Category",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Utilities",
+        "Housing",
+        "Insurance",
+        "Subscriptions",
+        "Loans",
+        "Credit Card",
+        "Phone/Internet",
+        "Other"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldWRZx7o55LbcBkgie",
+      "name": "Amount",
+      "dbFieldName": "Amount",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": "¥"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldEpEKNv5O6GdgaBWH",
+      "name": "Due Date",
+      "dbFieldName": "Due_Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldW3IYdRYs4tly4D4U",
+      "name": "Status",
+      "dbFieldName": "Status",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Pending",
+        "Paid",
+        "Overdue",
+        "Scheduled"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldJi0Y4a64EO00fsx1",
+      "name": "Frequency",
+      "dbFieldName": "Frequency",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "One-time",
+        "Monthly",
+        "Quarterly",
+        "Yearly"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldn3c9lyj4lnz5qnqa",
+      "name": "Payment Method",
+      "dbFieldName": "Payment_Method",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Bank Transfer",
+        "Credit Card",
+        "Debit Card",
+        "Cash",
+        "Auto-Pay"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldyRSzUh2SxOUalzyT",
+      "name": "Notes",
+      "dbFieldName": "Notes",
+      "type": "longText",
+      "description": "Additional notes or payment details",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldrgLAMOj8Sy7r8xky",
+      "name": "Paid Date",
+      "dbFieldName": "Paid_Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld6q9VlGvVx2INXNl4",
+      "name": "Attachments",
+      "dbFieldName": "Attachments",
+      "type": "attachment",
+      "description": "Receipts, invoices, or related documents",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldwXZBH2SiXP4FWQoE",
+      "name": "Is Due Tomorrow",
+      "dbFieldName": "Is_Due_Tomorrow",
+      "type": "formula",
+      "description": "True if the bill is due tomorrow (for automation trigger)",
+      "options": {
+        "expression": "AND({fld0WvEaHm6tXpmOIfB} = 1, {fldW3IYdRYs4tly4D4U} = 'Pending')"
+      },
+      "cellValueType": "boolean",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld0WvEaHm6tXpmOIfB",
+      "name": "Days Until Due",
+      "dbFieldName": "Days_Until_Due",
+      "type": "formula",
+      "description": "Number of days until the due date",
+      "options": {
+        "expression": "DATETIME_DIFF({fldEpEKNv5O6GdgaBWH}, TODAY(), 'days')",
+        "formatting": {
+          "type": "decimal",
+          "precision": 0
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    }
+  ]
+}

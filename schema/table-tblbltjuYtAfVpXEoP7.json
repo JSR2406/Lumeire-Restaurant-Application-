@@ -1,0 +1,205 @@
+{
+  "id": "tblbltjuYtAfVpXEoP7",
+  "name": "CRM - Invoices",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"CRM_Invoices\"",
+  "fields": [
+    {
+      "id": "fldWiiKyON19J8uNtWi",
+      "name": "Invoice Number",
+      "dbFieldName": "Invoice_Number",
+      "type": "autoNumber",
+      "description": null,
+      "options": {
+        "expression": "AUTO_NUMBER()",
+        "prefix": "INV-",
+        "startFrom": 1000
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldAXY2HdMDTS7RvyvE",
+      "name": "Invoice Date",
+      "dbFieldName": "Invoice_Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "M/D/YYYY",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldk9L1qtbC7St4IWpe",
+      "name": "Due Date",
+      "dbFieldName": "Due_Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "M/D/YYYY",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldbBeEqayZYzWHjTG0",
+      "name": "Amount",
+      "dbFieldName": "Amount",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": "$"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldElUEMeo4wRBB8fJy",
+      "name": "Payment Status",
+      "dbFieldName": "Payment_Status",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Draft",
+        "Sent",
+        "Paid",
+        "Overdue",
+        "Cancelled"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld8vK5no2mQG2OIv5K",
+      "name": "Payment Date",
+      "dbFieldName": "Payment_Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "M/D/YYYY",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld6DEUdKJKKfZE91uV",
+      "name": "Invoice File",
+      "dbFieldName": "Invoice_File",
+      "type": "attachment",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldk63NPT3CoLJVEVi3",
+      "name": "Created Date",
+      "dbFieldName": "Created_Date",
+      "type": "createdTime",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "UTC"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldOqmvxHZ4LFlKFdrk",
+      "name": "Deal",
+      "dbFieldName": "Deal",
+      "type": "link",
+      "description": "Link invoice to deal",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tblGj6hp8mV1AFSHll7",
+        "isOneWay": false,
+        "symmetricFieldId": "fld0NfWUBoPTTTrYU41",
+        "lookupFieldId": "fldVPtTFgnDf8dLvvgs",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Invoices",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldOqmvxHZ4LFlKFdrk"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld0CPnrxatHQYaTfOw",
+      "name": "Company",
+      "dbFieldName": "Company",
+      "type": "link",
+      "description": "Link invoice to company",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tblAlIfTmQUQQRWlcxP",
+        "isOneWay": false,
+        "symmetricFieldId": "fldXrqLOUZOhT0Ynbqf",
+        "lookupFieldId": "fldFpB8U5ixdMCfKZCD",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.CRM_Invoices",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fld0CPnrxatHQYaTfOw"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldL63ztBYYwYfRpK8B",
+      "name": "Days Overdue",
+      "dbFieldName": "Days_Overdue",
+      "type": "formula",
+      "description": "Days past due date",
+      "options": {
+        "expression": "IF({fldElUEMeo4wRBB8fJy} = 'Paid', 0, IF(DATETIME_DIFF(NOW(), {fldk9L1qtbC7St4IWpe}, 'day') > 0, DATETIME_DIFF(NOW(), {fldk9L1qtbC7St4IWpe}, 'day'), 0))",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    }
+  ]
+}

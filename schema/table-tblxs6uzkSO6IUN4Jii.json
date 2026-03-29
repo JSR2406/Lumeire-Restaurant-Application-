@@ -1,0 +1,108 @@
+{
+  "id": "tblxs6uzkSO6IUN4Jii",
+  "name": "Events Copy",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Events_Copy\"",
+  "fields": [
+    {
+      "id": "fldsdPMKDqTQcSEAT1B",
+      "name": "Event Name",
+      "dbFieldName": "Event_Name",
+      "type": "singleLineText",
+      "description": "Name of the event or special promotion",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld1aRxiogNUEftXVoS",
+      "name": "Image",
+      "dbFieldName": "Image",
+      "type": "attachment",
+      "description": "Event banner or promotional image used for AI description generation",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldhprWIxXE2oI6nW0l",
+      "name": "Status",
+      "dbFieldName": "Status",
+      "type": "singleSelect",
+      "description": "Current status of the event",
+      "options": [
+        "Upcoming",
+        "Ongoing",
+        "Completed"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldSpScuyHZmp5SlXpN",
+      "name": "Description",
+      "dbFieldName": "Description",
+      "type": "longText",
+      "description": "AI-generated engaging description based on event image, highlighting theme, atmosphere, and unique features",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld5Q09jsDX2vqLYmcq",
+      "name": "Start Date",
+      "dbFieldName": "Event_Date",
+      "type": "singleLineText",
+      "description": "Date when the event takes place",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldfrTbATlH4G8lgkQF",
+      "name": "Ingredients",
+      "dbFieldName": "Ingredients",
+      "type": "longText",
+      "description": "AI-extracted key highlights, featured dishes, or main activities from the event description",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldduLD19K2aBE7vocg",
+      "name": "End Date",
+      "dbFieldName": "Start_Date_Copy",
+      "type": "singleLineText",
+      "description": "Date when the event takes place",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldAq9bA912xDADa2sH",
+      "name": "Price",
+      "dbFieldName": "Price",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}

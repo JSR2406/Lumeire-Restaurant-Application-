@@ -1,0 +1,107 @@
+{
+  "id": "tbl2hgRlMXiZricsoZv",
+  "name": "Iceland Trip - Discussions",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Iceland_Trip_Discussions\"",
+  "fields": [
+    {
+      "id": "fldKOfZx7umjvUZpPW4",
+      "name": "Topic",
+      "dbFieldName": "Topic",
+      "type": "singleLineText",
+      "description": "Discussion topic",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldw0xntDVZMrzuyzzk",
+      "name": "Category",
+      "dbFieldName": "Category",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Itinerary",
+        "Booking",
+        "Budget",
+        "Packing",
+        "General"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldHB70SGcf1SYtSkhy",
+      "name": "Message",
+      "dbFieldName": "Message",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld7bFlTiKevGpurqNU",
+      "name": "Posted By",
+      "dbFieldName": "Posted_By",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldjkR7lwVglgmDtvI2",
+      "name": "Posted Date",
+      "dbFieldName": "Posted_Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "HH:mm",
+          "timeZone": "Atlantic/Reykjavik"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldSLjVZqtdL0X4DrRL",
+      "name": "Status",
+      "dbFieldName": "Status",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Open",
+        "Resolved"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldHkPK98R20Tz3YKdl",
+      "name": "Attachments",
+      "dbFieldName": "Attachments",
+      "type": "attachment",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    }
+  ]
+}

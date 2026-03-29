@@ -1,0 +1,260 @@
+{
+  "id": "tblqxH0Vz9whAA8e0r9",
+  "name": "Smart Bill Collection",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Smart_Bill_Collection\"",
+  "fields": [
+    {
+      "id": "fldUHRFXK25l1oMfieN",
+      "name": "Bill ID",
+      "dbFieldName": "Bill_ID",
+      "type": "autoNumber",
+      "description": "Automatically assigned bill number",
+      "options": {
+        "expression": "AUTO_NUMBER()"
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldo9QXwpLwbA0crSVG",
+      "name": "Bill Document",
+      "dbFieldName": "Bill_Document",
+      "type": "attachment",
+      "description": "Upload bill image/PDF - AI will extract information automatically",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldNQm62CaJbwdlBwUx",
+      "name": "Upload Date",
+      "dbFieldName": "Upload_Date",
+      "type": "createdTime",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldc2bSagGEa7QSyQJZ",
+      "name": "Status",
+      "dbFieldName": "Status",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "New",
+        "Extracted",
+        "Pending Payment",
+        "Paid",
+        "Overdue"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld42uJhX4sXIp7VOFn",
+      "name": "Bill Name",
+      "dbFieldName": "Bill_Name",
+      "type": "singleLineText",
+      "description": "AI-extracted: Bill provider/merchant name",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldysw9bP71lK6KlQwG",
+      "name": "Amount",
+      "dbFieldName": "Amount",
+      "type": "number",
+      "description": "AI-extracted: Total amount to pay",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": "¥"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldGGQoG5JL3tf6tIFb",
+      "name": "Due Date",
+      "dbFieldName": "Due_Date",
+      "type": "date",
+      "description": "AI-extracted: Payment due date",
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldh9MTtPGQNWkmHohB",
+      "name": "Category",
+      "dbFieldName": "Category",
+      "type": "singleSelect",
+      "description": "AI-classified: Bill category",
+      "options": [
+        "Utilities",
+        "Housing",
+        "Insurance",
+        "Subscriptions",
+        "Loans",
+        "Credit Card",
+        "Phone/Internet",
+        "Transportation",
+        "Healthcare",
+        "Other"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldQ7QMmTi2MKbwmVhA",
+      "name": "Account Number",
+      "dbFieldName": "Account_Number",
+      "type": "singleLineText",
+      "description": "AI-extracted: Account or reference number",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldE2Ol0Irbpjgi3rDj",
+      "name": "Billing Period",
+      "dbFieldName": "Billing_Period",
+      "type": "singleLineText",
+      "description": "AI-extracted: Service period or billing cycle",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld8ZqQhz9Akgkg088z",
+      "name": "Notes",
+      "dbFieldName": "Notes",
+      "type": "longText",
+      "description": "AI-generated: Summary and key details",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldiFruyqNXEPbDsRLY",
+      "name": "Days Until Due",
+      "dbFieldName": "Days_Until_Due",
+      "type": "formula",
+      "description": "Days remaining until payment due",
+      "options": {
+        "expression": "IF({fldGGQoG5JL3tf6tIFb}, DATETIME_DIFF({fldGGQoG5JL3tf6tIFb}, TODAY(), 'days'), BLANK())",
+        "formatting": {
+          "type": "decimal",
+          "precision": 0
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldHDwn43jdPl7bKfC9",
+      "name": "Is Due Tomorrow",
+      "dbFieldName": "Is_Due_Tomorrow",
+      "type": "formula",
+      "description": "True if due tomorrow (for automation)",
+      "options": {
+        "expression": "AND({fldiFruyqNXEPbDsRLY} = 1, OR({fldc2bSagGEa7QSyQJZ} = 'Pending Payment', {fldc2bSagGEa7QSyQJZ} = 'Extracted'))"
+      },
+      "cellValueType": "boolean",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld5YBuDRfdZnljxbwF",
+      "name": "Payment Method",
+      "dbFieldName": "Payment_Method",
+      "type": "singleSelect",
+      "description": "How you paid the bill",
+      "options": [
+        "Bank Transfer",
+        "Credit Card",
+        "Debit Card",
+        "Alipay",
+        "WeChat Pay",
+        "Cash",
+        "Auto-Pay"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld8kGQFRUgndNg7fcm",
+      "name": "Paid Date",
+      "dbFieldName": "Paid_Date",
+      "type": "date",
+      "description": "When you actually paid the bill",
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld2YZz8gn50cWzFUto",
+      "name": "Label",
+      "dbFieldName": "Label",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}

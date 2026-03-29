@@ -1,0 +1,217 @@
+{
+  "id": "tblVdbyg4Qb0aVzeZh1",
+  "name": "财务收款",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Cai_Wu_Shou_Kuan\"",
+  "fields": [
+    {
+      "id": "fld47lxcaEgGXCKxpmZ",
+      "name": "收款单号",
+      "dbFieldName": "Shou_Kuan_Dan_Hao",
+      "type": "singleLineText",
+      "description": "收款记录的唯一编号",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldJbWe82I3s9pNuPvu",
+      "name": "收款日期",
+      "dbFieldName": "Shou_Kuan_Ri_Qi",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldbMxJYJMedMnNqSOI",
+      "name": "收款金额",
+      "dbFieldName": "Shou_Kuan_Jin_E",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": "¥"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld5OpILyHvYoFJnkcU",
+      "name": "收款方式",
+      "dbFieldName": "Shou_Kuan_Fang_Shi",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "银行转账",
+        "支付宝",
+        "微信",
+        "现金",
+        "支票",
+        "其他"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldg2TNqrRxSj8IV0Mj",
+      "name": "收款状态",
+      "dbFieldName": "Shou_Kuan_Zhuang_Tai",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "待收款",
+        "部分收款",
+        "已收款",
+        "逾期"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldAYChx3TlNKDsgZtI",
+      "name": "收款类型",
+      "dbFieldName": "Shou_Kuan_Lei_Xing",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "预付款",
+        "进度款",
+        "尾款",
+        "全款",
+        "其他"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldayRjPxBsIgm4g3l6",
+      "name": "发票状态",
+      "dbFieldName": "Fa_Piao_Zhuang_Tai",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "未开票",
+        "已开票",
+        "已寄出"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldtyxYwVBQVPvQuGLd",
+      "name": "发票号码",
+      "dbFieldName": "Fa_Piao_Hao_Ma",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldFdZinkGE6FVOxDtL",
+      "name": "经办人",
+      "dbFieldName": "Jing_Ban_Ren",
+      "type": "user",
+      "description": "负责收款的财务人员",
+      "options": {
+        "isMultiple": false,
+        "shouldNotify": true
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldKIwjhSmyzDof6p7u",
+      "name": "收款凭证",
+      "dbFieldName": "Shou_Kuan_Ping_Zheng",
+      "type": "attachment",
+      "description": "银行回单、收据等",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldPmeCOVgz9on5vMGi",
+      "name": "备注",
+      "dbFieldName": "Bei_Zhu",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldccKftbXO7VOjNW9C",
+      "name": "创建时间",
+      "dbFieldName": "Chuang_Jian_Shi_Jian",
+      "type": "createdTime",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "UTC"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldKLMOAnAbA61f3eH1",
+      "name": "关联合同",
+      "dbFieldName": "Guan_Lian_He_Tong",
+      "type": "link",
+      "description": "收款对应的合同",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tbloP9hLMO03MV8ixLU",
+        "isOneWay": false,
+        "symmetricFieldId": "fldvFgqb8tQKrl0GoZn",
+        "lookupFieldId": "fld91ih6y7OnpzEIlGO",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.Cai_Wu_Shou_Kuan",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldKLMOAnAbA61f3eH1"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}

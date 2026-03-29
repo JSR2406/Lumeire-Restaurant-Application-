@@ -1,0 +1,175 @@
+{
+  "id": "tblLYBMuWXVLI7pEcEA",
+  "name": "Iceland Trip - Bookings",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Iceland_Trip_Bookings\"",
+  "fields": [
+    {
+      "id": "fldzzF9Pv7FUllQxUHl",
+      "name": "Booking Name",
+      "dbFieldName": "Booking_Name",
+      "type": "singleLineText",
+      "description": "Car rental or accommodation name",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldYsofyz9SHubnrjaj",
+      "name": "Type",
+      "dbFieldName": "Type",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Car Rental",
+        "Accommodation",
+        "Activity",
+        "Flight"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldvZdXcOPA7oHyztdS",
+      "name": "Provider",
+      "dbFieldName": "Provider",
+      "type": "singleLineText",
+      "description": "Company name",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldebFN8FOQBj923j6h",
+      "name": "Confirmation Number",
+      "dbFieldName": "Confirmation_Number",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldoca3yn6uGi9H9om1",
+      "name": "Check-in Date",
+      "dbFieldName": "Check_in_Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "HH:mm",
+          "timeZone": "Atlantic/Reykjavik"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldge9s1BNnRr0eAouH",
+      "name": "Check-out Date",
+      "dbFieldName": "Check_out_Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "HH:mm",
+          "timeZone": "Atlantic/Reykjavik"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld3KjY11ZrSX71qErS",
+      "name": "Cost",
+      "dbFieldName": "Cost",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": "$"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldoWbfaqrwRgo0SSD7",
+      "name": "Status",
+      "dbFieldName": "Status",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Pending",
+        "Confirmed",
+        "Cancelled"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldxdNKe9qcb2L5RLmN",
+      "name": "Booking Documents",
+      "dbFieldName": "Booking_Documents",
+      "type": "attachment",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldMdv31AV6EvLVwRXg",
+      "name": "Notes",
+      "dbFieldName": "Notes",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "flde4AExxL05sujVXH3",
+      "name": "Iceland Trip - Itinerary",
+      "dbFieldName": "Iceland_Trip_Itinerary",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "manyMany",
+        "foreignTableId": "tblL03EF7zktMKqErE7",
+        "lookupFieldId": "fldYbdXTOSdhfbkU4Xq",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.junction_fldmlEat0knrC8sH7yF_flde4AExxL05sujVXH3",
+        "selfKeyName": "__fk_fldmlEat0knrC8sH7yF",
+        "foreignKeyName": "__fk_flde4AExxL05sujVXH3",
+        "symmetricFieldId": "fldmlEat0knrC8sH7yF"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "id": "tblVvdAcc1peNtwJhDS",
+  "name": "Job Candidates",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Job_Candidates\"",
+  "fields": [
+    {
+      "id": "fldQ8AOjvroqIkpdTub",
+      "name": "Full Name",
+      "dbFieldName": "Full_Name",
+      "type": "singleLineText",
+      "description": "Candidate's full name",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldqUaCpfVDkEp00ZGj",
+      "name": "Email",
+      "dbFieldName": "Email",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "flda3oAPF00rPZH9JGv",
+      "name": "Phone",
+      "dbFieldName": "Phone",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldOOSvDH61ejT5sgMu",
+      "name": "Location",
+      "dbFieldName": "Location",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld4X7bBoZyxxhwfXiB",
+      "name": "Current Role",
+      "dbFieldName": "Current_Role",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldkbqo3RqPw3wlCR2I",
+      "name": "Years of Experience",
+      "dbFieldName": "Years_of_Experience",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 1,
+          "type": "decimal"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldhZvvLHdR6qqlK5wY",
+      "name": "Resume",
+      "dbFieldName": "Resume",
+      "type": "attachment",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldkgTBdavMMUpUsUd5",
+      "name": "Application Date",
+      "dbFieldName": "Application_Date",
+      "type": "createdTime",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "UTC"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldnXvnM8xbshGBnwTz",
+      "name": "AI Candidate Match Score",
+      "dbFieldName": "AI_Candidate_Match_Score",
+      "type": "rating",
+      "description": "AI-calculated candidate quality score (1-5 stars)",
+      "options": {
+        "icon": "star",
+        "color": "yellowBright",
+        "max": 5
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld7O02XdX1ArtZipEe",
+      "name": "Stage",
+      "dbFieldName": "Stage",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "New Application",
+        "Resume Reviewed",
+        "Phone Screen",
+        "Interview Scheduled",
+        "Interviewed",
+        "Offer Extended",
+        "Hired",
+        "Rejected"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldUtOwEeNJDaT2pO3f",
+      "name": "Work Experience Summary",
+      "dbFieldName": "Work_Experience_Summary",
+      "type": "longText",
+      "description": "Summary of work experience",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldDixyQc6ck6sYJZDD",
+      "name": "AI Resume Summary",
+      "dbFieldName": "AI_Resume_Summary",
+      "type": "longText",
+      "description": "AI-generated comprehensive resume summary",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldDA6eX8XI9STvzd1f",
+      "name": "Overall Rating",
+      "dbFieldName": "Overall_Rating",
+      "type": "rating",
+      "description": "Overall candidate rating (1-5 stars)",
+      "options": {
+        "icon": "star",
+        "color": "yellowBright",
+        "max": 5
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldrvzhkNOrz2X00sIZ",
+      "name": "Education",
+      "dbFieldName": "Education",
+      "type": "longText",
+      "description": "Educational background",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldb1nv1nF4bqz4RmuR",
+      "name": "Strengths",
+      "dbFieldName": "Strengths",
+      "type": "longText",
+      "description": "Key strengths and achievements",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldlzKB8QAortrj9HdR",
+      "name": "Notes",
+      "dbFieldName": "Notes",
+      "type": "longText",
+      "description": "Internal notes and observations",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldQO0QcVddQrMyKvg6",
+      "name": "AI Recommended Role",
+      "dbFieldName": "AI_Recommended_Role",
+      "type": "singleLineText",
+      "description": "AI-recommended best-fit role",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldFmrHHpMhOdEGp5ub",
+      "name": "AI Key Strengths",
+      "dbFieldName": "AI_Key_Strengths",
+      "type": "longText",
+      "description": "AI-identified top strengths",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldRYc4VpQPmGuAWYwe",
+      "name": "Key Skills",
+      "dbFieldName": "Key_Skills",
+      "type": "multipleSelect",
+      "description": null,
+      "options": [
+        "Leadership",
+        "Project Management",
+        "Technical",
+        "Communication",
+        "Sales",
+        "Marketing",
+        "Data Analysis",
+        "Customer Service",
+        "Financial Analysis",
+        "Strategic Planning"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    }
+  ]
+}

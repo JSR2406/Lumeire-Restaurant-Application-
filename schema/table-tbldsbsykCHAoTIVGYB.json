@@ -1,0 +1,32 @@
+{
+  "id": "tbldsbsykCHAoTIVGYB",
+  "name": "Restaurant Setting",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"New_table_12hSIVXTPG3b\"",
+  "fields": [
+    {
+      "id": "fldvd6w44wIIL1zrBHE",
+      "name": "Label",
+      "dbFieldName": "Label",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld1rGONkJwY2GeCTry",
+      "name": "Restaurant Setting",
+      "dbFieldName": "Restaurant_Setting",
+      "type": "attachment",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    }
+  ]
+}

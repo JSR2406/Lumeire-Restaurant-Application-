@@ -1,0 +1,161 @@
+{
+  "id": "tbluxlDnJfcttcJB8zn",
+  "name": "Candidate Resumes",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Candidate_Resumes\"",
+  "fields": [
+    {
+      "id": "fldkoCO43DDKUHlqR1s",
+      "name": "Candidate Name",
+      "dbFieldName": "Candidate_Name",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldUQAtGXXLNMVCDajw",
+      "name": "Email",
+      "dbFieldName": "Email",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldDV1PN92F9pJ6BCwf",
+      "name": "Phone",
+      "dbFieldName": "Phone",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldQxq9a5dDw6cjXFco",
+      "name": "Education",
+      "dbFieldName": "Education",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldy0wS4xLtJZmq8Q8d",
+      "name": "Key Skills",
+      "dbFieldName": "Key_Skills",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldqxRQw5M5PJkLGFeE",
+      "name": "Years of Experience",
+      "dbFieldName": "Years_of_Experience",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld4mBfQ4Iu8wh6R0OW",
+      "name": "Primary Focus",
+      "dbFieldName": "Primary_Focus",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Marketing",
+        "Digital Marketing",
+        "Media Production",
+        "Journalism",
+        "Design"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldgGnZdFIms52tEsB9",
+      "name": "Status",
+      "dbFieldName": "Status",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Under Review",
+        "Shortlisted",
+        "Interview",
+        "Rejected",
+        "Hired"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldlZ6PjsyigKIaanyn",
+      "name": "Resume",
+      "dbFieldName": "Resume",
+      "type": "attachment",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldaH7vj370jghkuEU2",
+      "name": "Notes",
+      "dbFieldName": "Notes",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldFUUUkWA9gV7PA6gs",
+      "name": "Recommendation Score",
+      "dbFieldName": "Recommendation_Score",
+      "type": "rating",
+      "description": null,
+      "options": {
+        "icon": "star",
+        "color": "yellowBright",
+        "max": 5
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}

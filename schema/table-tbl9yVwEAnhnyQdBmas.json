@@ -1,0 +1,243 @@
+{
+  "id": "tbl9yVwEAnhnyQdBmas",
+  "name": "员工信息",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Yuan_Gong_Xin_Xi\"",
+  "fields": [
+    {
+      "id": "fld3wFucrNXK1r75RxZ",
+      "name": "工号",
+      "dbFieldName": "Gong_Hao",
+      "type": "singleLineText",
+      "description": "员工工号",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld1TKT4w44ZPHWbbio",
+      "name": "姓名",
+      "dbFieldName": "Xing_Ming",
+      "type": "singleLineText",
+      "description": "员工姓名",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldjxND4h9WKvefL4UZ",
+      "name": "部门",
+      "dbFieldName": "Bu_Men",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "技术部",
+        "销售部",
+        "财务部",
+        "人事部",
+        "市场部",
+        "运营部"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld2GVxUGlXma6y6TLj",
+      "name": "入职日期",
+      "dbFieldName": "Ru_Zhi_Ri_Qi",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld3lcWApqPP5aRG76F",
+      "name": "状态",
+      "dbFieldName": "Zhuang_Tai",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "在职",
+        "离职",
+        "试用期"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld0vpytVPtE5CnuSFV",
+      "name": "手机号",
+      "dbFieldName": "Shou_Ji_Hao",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldW3R5NEYeh9KWV3Ck",
+      "name": "身份证号",
+      "dbFieldName": "Shen_Fen_Zheng_Hao",
+      "type": "singleLineText",
+      "description": "用于个税申报",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldEseY6gnDySwJbdLy",
+      "name": "基本工资",
+      "dbFieldName": "Ji_Ben_Gong_Zi",
+      "type": "number",
+      "description": "月基本工资",
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": ""
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld6PVczdP4BmjI3gZK",
+      "name": "月度工资",
+      "dbFieldName": "Yue_Du_Gong_Zi",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tblPXZsjaVoIxdwOocs",
+        "lookupFieldId": "fld5RgZLImnkz9lwyug",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.Yue_Du_Gong_Zi",
+        "selfKeyName": "__fk_fldBpXTRQdSqfi3FzkH",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldBpXTRQdSqfi3FzkH"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldT4m8q0UPTetGaBiR",
+      "name": "银行卡号",
+      "dbFieldName": "Yin_Xing_Qia_Hao",
+      "type": "singleLineText",
+      "description": "用于工资发放",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld3RSS4OujgvjN1GYq",
+      "name": "开户银行",
+      "dbFieldName": "Kai_Hu_Yin_Xing",
+      "type": "singleLineText",
+      "description": "例如：中国工商银行北京分行",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldTnpuuLqJ0cZwD64X",
+      "name": "社保号",
+      "dbFieldName": "She_Bao_Hao",
+      "type": "singleLineText",
+      "description": "社会保障卡号",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldIbKogUIslooEMzTj",
+      "name": "公积金账号",
+      "dbFieldName": "Gong_Ji_Jin_Zhang_Hao",
+      "type": "singleLineText",
+      "description": "住房公积金账号",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldQxCJZ0kdgyBLZ5LH",
+      "name": "现居住地址",
+      "dbFieldName": "Xian_Ju_Zhu_Di_Zhi",
+      "type": "longText",
+      "description": "详细居住地址",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldvjNfkAwbVqUIVkTp",
+      "name": "个人邮箱",
+      "dbFieldName": "Ge_Ren_You_Xiang",
+      "type": "singleLineText",
+      "description": "用于接收通知和文件",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldLERY4j9GmT2xDrTV",
+      "name": "紧急联系人",
+      "dbFieldName": "Jin_Ji_Lian_Xi_Ren",
+      "type": "singleLineText",
+      "description": "紧急联系人姓名",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldP0inltPlUSFsgtmi",
+      "name": "紧急联系电话",
+      "dbFieldName": "Jin_Ji_Lian_Xi_Dian_Hua",
+      "type": "singleLineText",
+      "description": "紧急联系人电话",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}

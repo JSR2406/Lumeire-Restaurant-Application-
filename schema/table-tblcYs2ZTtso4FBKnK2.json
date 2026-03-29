@@ -1,0 +1,53 @@
+{
+  "id": "tblcYs2ZTtso4FBKnK2",
+  "name": "confirm",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"New_table_12GQcgsAEWmr\"",
+  "fields": [
+    {
+      "id": "fldYbKxjdhk9vJiCpjU",
+      "name": "Label",
+      "dbFieldName": "Label",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldW5fsnStSrFfarIb4",
+      "name": "Number",
+      "dbFieldName": "Number",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 0,
+          "type": "decimal"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldrIiXId7wYfEK9mF1",
+      "name": "Status",
+      "dbFieldName": "Status",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "To do",
+        "In progress",
+        "Done"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}

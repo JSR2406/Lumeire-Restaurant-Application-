@@ -1,0 +1,130 @@
+{
+  "id": "tblc2zXr4fyus93YeF3",
+  "name": "预约待确认",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Yu_Yue_Dai_Que_Ren\"",
+  "fields": [
+    {
+      "id": "fldXfA9TsPSC3cSHgiq",
+      "name": "客户姓名",
+      "dbFieldName": "Ke_Hu_Xing_Ming",
+      "type": "singleLineText",
+      "description": "客户姓名",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld2NyTHpsqPAhyyC73",
+      "name": "邮箱",
+      "dbFieldName": "You_Xiang",
+      "type": "singleLineText",
+      "description": "客户邮箱地址",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldMaJtvpHGMGmMKLC6",
+      "name": "电话",
+      "dbFieldName": "Dian_Hua",
+      "type": "singleLineText",
+      "description": "联系电话",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldAwyTCIlkzV6If1h9",
+      "name": "预约人数",
+      "dbFieldName": "Yu_Yue_Ren_Shu",
+      "type": "number",
+      "description": "用餐人数",
+      "options": {
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld2ngcysv0ZHdTk4sH",
+      "name": "特殊要求",
+      "dbFieldName": "Te_Shu_Yao_Qiu",
+      "type": "longText",
+      "description": "客户特殊要求",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldCF8TvPUEZ41uuzZ8",
+      "name": "确认状态",
+      "dbFieldName": "Que_Ren_Zhuang_Tai",
+      "type": "singleSelect",
+      "description": "预约确认状态",
+      "options": [
+        "待确认",
+        "已确认",
+        "已拒绝"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldanqxtRpJYuube7hS",
+      "name": "提交时间",
+      "dbFieldName": "Ti_Jiao_Shi_Jian",
+      "type": "createdTime",
+      "description": "预约提交时间",
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "UTC"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldHSBwUnuqFzcD0eLl",
+      "name": "时间段",
+      "dbFieldName": "Shi_Jian_Duan",
+      "type": "singleSelect",
+      "description": "预约时间段",
+      "options": [
+        "10:00 AM - 12:00 PM",
+        "12:00 PM - 02:00 PM",
+        "02:00 PM - 04:00 PM",
+        "04:00 PM - 06:00 PM",
+        "06:00 PM - 08:00 PM",
+        "08:00 PM - 10:00 PM",
+        "12:00 PM-02:00 PM",
+        "06:00 PM-08:00 PM",
+        "Not Selected"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}

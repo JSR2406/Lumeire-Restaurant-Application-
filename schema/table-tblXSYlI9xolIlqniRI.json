@@ -1,0 +1,110 @@
+{
+  "id": "tblXSYlI9xolIlqniRI",
+  "name": "Slots Copy",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Slots_Copy\"",
+  "fields": [
+    {
+      "id": "fldEN3jYwviVX8mgup7",
+      "name": "Date",
+      "dbFieldName": "Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldDQHejN3Ev7s201GW",
+      "name": "Time Slot-B",
+      "dbFieldName": "Time_Slot",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "12:00 PM-02:00 PM"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldx4U7AT4iykzQQOrg",
+      "name": "Time Slot-A",
+      "dbFieldName": "Time_Slot_Copy",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "10:00 AM-12:00PM"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldLW5YwGJCdBJAvExs",
+      "name": "Time Slot-C",
+      "dbFieldName": "Time_Slot_Copy_2",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "02:00 PM-04:00 PM"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldvR1LQ4Sl8O11CZEa",
+      "name": "Time Slot -D",
+      "dbFieldName": "Time_Slot_Copy_2_Copy",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "04:00 PM-06:00 PM"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldlv8E72RWQQsL6K9m",
+      "name": "Time Slot -E",
+      "dbFieldName": "Time_Slot_Copy_2_Copy_Copy",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "06:00 PM-08:00 PM"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "flddRnUurS6sgw0jnuV",
+      "name": "Time Slot -F",
+      "dbFieldName": "Time_Slot_E_Copy",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "08:00 PM-10:00 PM"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}

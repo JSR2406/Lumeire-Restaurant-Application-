@@ -1,0 +1,175 @@
+{
+  "id": "tblCw3ypByBcUZubGd0",
+  "name": "Reservations",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"New_table_12xP0VoLvG7X\"",
+  "fields": [
+    {
+      "id": "fldyInOgkAtn2oARMV6",
+      "name": "Reservation ID",
+      "dbFieldName": "Label",
+      "type": "singleLineText",
+      "description": "自动生成的预约编号",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldnd9FOYwlNkZS3HIy",
+      "name": "Customer Name",
+      "dbFieldName": "Customer_Name",
+      "type": "singleLineText",
+      "description": "客户姓名",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldYOukZjq5XESmQrIZ",
+      "name": "Email",
+      "dbFieldName": "Email",
+      "type": "singleLineText",
+      "description": "客户邮箱",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldNH8aUBclxtM9Twbc",
+      "name": "Phone",
+      "dbFieldName": "Phone",
+      "type": "singleLineText",
+      "description": "联系电话",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldOA5JfXwAKYBCbMVh",
+      "name": "Time Slot",
+      "dbFieldName": "Time_Slot",
+      "type": "singleSelect",
+      "description": "预约时间段",
+      "options": [
+        "10:00 AM - 12:00 PM",
+        "12:00 PM - 02:00 PM",
+        "02:00 PM - 04:00 PM",
+        "04:00 PM - 06:00 PM",
+        "06:00 PM - 08:00 PM",
+        "08:00 PM - 10:00 PM",
+        "12:00 PM-02:00 PM"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldRhCbLtUvtgJwPpkM",
+      "name": "Special Requests",
+      "dbFieldName": "Special_Requests",
+      "type": "longText",
+      "description": "特殊要求",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldPY8bjN3Mdug2FkHR",
+      "name": "Confirm",
+      "dbFieldName": "Confirm",
+      "type": "checkbox",
+      "description": "勾选此框确认预约，系统将自动发送确认邮件给客户",
+      "options": {},
+      "cellValueType": "boolean",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldUUVFJ9Tfi36g0hVW",
+      "name": "Reservation Date",
+      "dbFieldName": "Reservation_Date",
+      "type": "date",
+      "description": "预约日期",
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldCD20iMFSeXdx2qKw",
+      "name": "Created Time",
+      "dbFieldName": "Created_Time",
+      "type": "createdTime",
+      "description": "预约提交时间",
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "HH:mm",
+          "timeZone": "Asia/Shanghai"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldWDEBMWTd32E832aS",
+      "name": "Reservation Slot",
+      "dbFieldName": "Reservation_Slot",
+      "type": "link",
+      "description": "Link to available reservation date from Reservation Slots table",
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tblMUeVFWXDpYFChdgd",
+        "isOneWay": false,
+        "symmetricFieldId": "fldgFB9DZtbqusubeuq",
+        "lookupFieldId": "fld8fzPyUk4bMSsaGLd",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.New_table_12xP0VoLvG7X",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldWDEBMWTd32E832aS"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld2KphH1VLSNWVGrFG",
+      "name": "Number of Guests",
+      "dbFieldName": "Number_of_Guests",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 0,
+          "type": "decimal"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}

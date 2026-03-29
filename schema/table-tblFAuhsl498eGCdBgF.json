@@ -1,0 +1,282 @@
+{
+  "id": "tblFAuhsl498eGCdBgF",
+  "name": "客户信息",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Ke_Hu_Xin_Xi\"",
+  "fields": [
+    {
+      "id": "fldLPqASvnWDhJIoNeq",
+      "name": "客户名称",
+      "dbFieldName": "Ke_Hu_Ming_Cheng",
+      "type": "singleLineText",
+      "description": "客户公司或个人名称",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldI6mBCYP8PuoPGVam",
+      "name": "客户类型",
+      "dbFieldName": "Ke_Hu_Lei_Xing",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "企业客户",
+        "个人客户",
+        "政府机构",
+        "其他"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldjM33Vp9liz11BoeY",
+      "name": "客户状态",
+      "dbFieldName": "Ke_Hu_Zhuang_Tai",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "潜在客户",
+        "意向客户",
+        "成交客户",
+        "流失客户"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldTPTF3b3cL4XEOXxx",
+      "name": "联系人",
+      "dbFieldName": "Lian_Xi_Ren",
+      "type": "singleLineText",
+      "description": "主要联系人姓名",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldQuZkUN8KwprUsMkG",
+      "name": "联系电话",
+      "dbFieldName": "Lian_Xi_Dian_Hua",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldQa9GOtTce45qwqZg",
+      "name": "联系邮箱",
+      "dbFieldName": "Lian_Xi_You_Xiang",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldrsNJIxFU2qG9Ea5B",
+      "name": "所在地区",
+      "dbFieldName": "Suo_Zai_Di_Qu",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldvoLu8MJhQLBVopF2",
+      "name": "行业",
+      "dbFieldName": "Xing_Ye",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "制造业",
+        "服务业",
+        "零售业",
+        "科技",
+        "金融",
+        "教育",
+        "医疗",
+        "其他"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldjaoR5T43evXWcewJ",
+      "name": "负责销售",
+      "dbFieldName": "Fu_Ze_Xiao_Shou",
+      "type": "user",
+      "description": "负责跟进的销售人员",
+      "options": {
+        "isMultiple": false,
+        "shouldNotify": true
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldWMSvLXIQFbjAxll9",
+      "name": "客户来源",
+      "dbFieldName": "Ke_Hu_Lai_Yuan",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "线上推广",
+        "电话营销",
+        "客户转介绍",
+        "展会",
+        "其他"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldMP2aHdH1srrZFQ5d",
+      "name": "备注",
+      "dbFieldName": "Bei_Zhu",
+      "type": "longText",
+      "description": "客户相关备注信息",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld1BsPd4LlbNSieK4K",
+      "name": "创建时间",
+      "dbFieldName": "Chuang_Jian_Shi_Jian",
+      "type": "createdTime",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "UTC"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld1EmooAN6OR7G61SG",
+      "name": "合同总金额",
+      "dbFieldName": "He_Tong_Zong_Jin_E",
+      "type": "rollup",
+      "description": "该客户所有合同的总金额",
+      "options": {
+        "expression": "sum({values})",
+        "formatting": {
+          "type": "currency",
+          "precision": 2,
+          "symbol": "¥"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldKbPxNFE0e7VxEkuF",
+      "name": "销售跟进",
+      "dbFieldName": "Xiao_Shou_Gen_Jin",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tbl8IWSwBFdElXMHHNy",
+        "lookupFieldId": "fldE84JdJNta5rYDoZD",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.Xiao_Shou_Gen_Jin",
+        "selfKeyName": "__fk_fldBi7NBJdXaxePBKSB",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldBi7NBJdXaxePBKSB"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldK7IyfrUkvL7AqQPk",
+      "name": "合同管理",
+      "dbFieldName": "He_Tong_Guan_Li",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tbloP9hLMO03MV8ixLU",
+        "lookupFieldId": "fld91ih6y7OnpzEIlGO",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.He_Tong_Guan_Li",
+        "selfKeyName": "__fk_fldp0roUmvcywXDOe2R",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldp0roUmvcywXDOe2R"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fld9MMbJGo8D8dHBybY",
+      "name": "合同数量",
+      "dbFieldName": "He_Tong_Shu_Liang",
+      "type": "rollup",
+      "description": "该客户的合同总数",
+      "options": {
+        "expression": "countall({values})",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld78WHrfKS5HksQ6AW",
+      "name": "跟进次数",
+      "dbFieldName": "Gen_Jin_Ci_Shu",
+      "type": "rollup",
+      "description": "该客户的销售跟进总次数",
+      "options": {
+        "expression": "countall({values})",
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    }
+  ]
+}

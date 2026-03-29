@@ -1,0 +1,210 @@
+{
+  "id": "tblL03EF7zktMKqErE7",
+  "name": "Iceland Trip - Itinerary",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Iceland_Trip_Itinerary\"",
+  "fields": [
+    {
+      "id": "fldYbdXTOSdhfbkU4Xq",
+      "name": "Day",
+      "dbFieldName": "Day",
+      "type": "number",
+      "description": "Day number of trip",
+      "options": {
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldGiQYtf2CABaxjc7z",
+      "name": "Date",
+      "dbFieldName": "Date",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "Atlantic/Reykjavik"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldLoHVKtVggkhyAI3F",
+      "name": "Title",
+      "dbFieldName": "Title",
+      "type": "singleLineText",
+      "description": "Day's main activity",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldE1v3XurwrGsL6i40",
+      "name": "Location",
+      "dbFieldName": "Location",
+      "type": "singleLineText",
+      "description": "Main destination",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldrv1qzuncCO9dzMMZ",
+      "name": "Activities",
+      "dbFieldName": "Activities",
+      "type": "longText",
+      "description": "Detailed itinerary",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldwFEgn0NrReru1Nvw",
+      "name": "Accommodation",
+      "dbFieldName": "Accommodation",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldJ1s9xzqERXjWocVj",
+      "name": "Estimated Cost",
+      "dbFieldName": "Estimated_Cost",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "currency",
+          "symbol": "$"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldZAADTe7sDJNiiEgV",
+      "name": "Photos",
+      "dbFieldName": "Photos",
+      "type": "attachment",
+      "description": "Location photos and memories",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldaSU5v2hKfLywThfD",
+      "name": "Status",
+      "dbFieldName": "Status",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Planning",
+        "Confirmed",
+        "Completed"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldTzu83mLRKNlLkGIA",
+      "name": "Notes",
+      "dbFieldName": "Notes",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldmlEat0knrC8sH7yF",
+      "name": "Related Bookings",
+      "dbFieldName": "Related_Bookings",
+      "type": "link",
+      "description": "Bookings for this day",
+      "options": {
+        "relationship": "manyMany",
+        "foreignTableId": "tblLYBMuWXVLI7pEcEA",
+        "isOneWay": false,
+        "symmetricFieldId": "flde4AExxL05sujVXH3",
+        "lookupFieldId": "fldzzF9Pv7FUllQxUHl",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.junction_fldmlEat0knrC8sH7yF_flde4AExxL05sujVXH3",
+        "selfKeyName": "__fk_flde4AExxL05sujVXH3",
+        "foreignKeyName": "__fk_fldmlEat0knrC8sH7yF"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldug39mYOrsTV0sZtf",
+      "name": "Iceland Trip - Expenses",
+      "dbFieldName": "Iceland_Trip_Expenses",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tbl1otasEZs0ZbHYo9h",
+        "lookupFieldId": "fldTb6vP6gNXsO2L9Q2",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.Iceland_Trip_Expenses",
+        "selfKeyName": "__fk_fldYg2O7fAymBrifltu",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldYg2O7fAymBrifltu"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldrCF1jXHltYJ0D1vw",
+      "name": "Iceland Trip - Photos",
+      "dbFieldName": "Iceland_Trip_Photos",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tblDXlnehKNRyazfQOP",
+        "lookupFieldId": "fld9j6NBLAAxDdLWvJu",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.Iceland_Trip_Photos",
+        "selfKeyName": "__fk_fldbJj5tNt0xNaOv2KR",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldbJj5tNt0xNaOv2KR"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "tbljCRcjyfeacwPywOg",
+  "name": "Events",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Events\"",
+  "fields": [
+    {
+      "id": "fldaZSoR1zzBl0Do73f",
+      "name": "Event Name",
+      "dbFieldName": "Event_Name",
+      "type": "singleLineText",
+      "description": "Name of the event or special promotion",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldgoPhNYFUGpPSEEXs",
+      "name": "Image",
+      "dbFieldName": "Image",
+      "type": "attachment",
+      "description": "Event banner or promotional image used for AI description generation",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldPt3WHaHAADmU3nfw",
+      "name": "Stard Date",
+      "dbFieldName": "Event_Date",
+      "type": "date",
+      "description": "Date when the event takes place",
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldRn7u1z0ZyE9gIG2l",
+      "name": "Status",
+      "dbFieldName": "Status",
+      "type": "singleSelect",
+      "description": "Current status of the event",
+      "options": [
+        "Upcoming",
+        "Ongoing",
+        "Completed"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldT2bQB2ORTHtmuhMw",
+      "name": "Ingredients",
+      "dbFieldName": "Ingredients",
+      "type": "longText",
+      "description": "AI-extracted key highlights, featured dishes, or main activities from the event description",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldpbKSJwkKz06A85zs",
+      "name": "Description",
+      "dbFieldName": "Description",
+      "type": "longText",
+      "description": "AI-generated engaging description based on event image, highlighting theme, atmosphere, and unique features",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld27pKjiOLIV0ZVNdS",
+      "name": "price",
+      "dbFieldName": "price",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "precision": 2,
+          "type": "decimal"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld63xQoVqCsd0oxhUo",
+      "name": "End Date ",
+      "dbFieldName": "Event_Date_Copy",
+      "type": "date",
+      "description": "Date when the event takes place",
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "Asia/Shanghai"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}

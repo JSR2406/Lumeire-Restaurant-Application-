@@ -1,0 +1,181 @@
+{
+  "id": "tblfOWkk8sc3WmFLzvv",
+  "name": "Reservations",
+  "description": null,
+  "dbTableName": "\"bseAChAwHk1SZHNggO2\".\"Reservations\"",
+  "fields": [
+    {
+      "id": "fldE47fd3Vp1TyGIIuK",
+      "name": "Customer Name",
+      "dbFieldName": "Customer_Name",
+      "type": "singleLineText",
+      "description": "Name of the customer",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldC6oTOJxmRthHrLRQ",
+      "name": "Email",
+      "dbFieldName": "Email",
+      "type": "singleLineText",
+      "description": "Customer email",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldvcmLNnSUv3gONZpY",
+      "name": "Phone",
+      "dbFieldName": "Phone",
+      "type": "singleLineText",
+      "description": "Contact phone number",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld9PdVybopHaOatSre",
+      "name": "Number of Guests",
+      "dbFieldName": "Number_of_Guests",
+      "type": "number",
+      "description": "Party size",
+      "options": {
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld4OozTPULjn4IzSen",
+      "name": "Special Requests",
+      "dbFieldName": "Special_Requests",
+      "type": "longText",
+      "description": "Any special requirements",
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldbNHyMajAzE4aDbeM",
+      "name": "Status",
+      "dbFieldName": "Status",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Pending",
+        "Confirmed",
+        "Cancelled",
+        "Completed"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldeUVHjK0f0EsPtJTK",
+      "name": "Date",
+      "dbFieldName": "Reservation_Slot",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tblMUeVFWXDpYFChdgd",
+        "isOneWay": false,
+        "symmetricFieldId": "fldYPHIy3kZKsRoJHxM",
+        "lookupFieldId": "fld8fzPyUk4bMSsaGLd",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.Reservations",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldeUVHjK0f0EsPtJTK"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldlwgoKBmKVMU4TUha",
+      "name": "Confirm",
+      "dbFieldName": "Label",
+      "type": "checkbox",
+      "description": "Tick this checkbox to confirm the reservation and send confirmation email to customer",
+      "options": {},
+      "cellValueType": "boolean",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fld9JN1O5dNj5p23yWC",
+      "name": "Created Time",
+      "dbFieldName": "Created_Time",
+      "type": "createdTime",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "YYYY-MM-DD",
+          "time": "None",
+          "timeZone": "UTC"
+        },
+        "expression": "CREATED_TIME()"
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": true,
+      "isMultipleCellValue": null
+    },
+    {
+      "id": "fldLqSDX6BO4B4wUMMK",
+      "name": "Confirm Info",
+      "dbFieldName": "Confirm_Info",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tblYC54ncY2fGtuuV4H",
+        "lookupFieldId": "fld0c7h8nUFo7jsVN7s",
+        "fkHostTableName": "bseAChAwHk1SZHNggO2.Confirm_Info",
+        "selfKeyName": "__fk_fldvVoJmQ42Y6XkdgMg",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldvVoJmQ42Y6XkdgMg"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    },
+    {
+      "id": "fldrB2waJX5zuAcP25Z",
+      "name": "time slot",
+      "dbFieldName": "time_slot",
+      "type": "singleSelect",
+      "description": "Selected time slot for the reservation",
+      "options": [
+        "10:00 AM - 12:00 PM",
+        "12:00 PM - 02:00 PM",
+        "02:00 PM - 04:00 PM",
+        "04:00 PM - 06:00 PM",
+        "06:00 PM - 08:00 PM",
+        "08:00 PM - 10:00 PM"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": null
+    }
+  ]
+}
