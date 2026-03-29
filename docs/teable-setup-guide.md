@@ -80,7 +80,7 @@ Your Reservations table should have these fields:
         <table width="100%" cellpadding="0" cellspacing="0">
           <tr>
             <td align="center" style="padding: 20px 0;">
-              <a href="https://YOUR-DOMAIN.vercel.app/confirm-reservation?id={Record ID}" 
+              <a href="https://lumeire-restaurant-application-janmejaysingh-invicis-projects.vercel.app/confirm-reservation?id={Record ID}" 
                  style="display: inline-block; background-color: #6366f1; color: #ffffff; text-decoration: none; padding: 16px 40px; border-radius: 50px; font-size: 16px; font-weight: bold;">
                 Confirm My Reservation
               </a>
@@ -90,8 +90,8 @@ Your Reservations table should have these fields:
         
         <p style="color: #999; font-size: 14px; text-align: center; margin-top: 30px;">
           If the button doesn't work, copy and paste this link:<br>
-          <a href="https://YOUR-DOMAIN.vercel.app/confirm-reservation?id={Record ID}" style="color: #6366f1;">
-            https://YOUR-DOMAIN.vercel.app/confirm-reservation?id={Record ID}
+          <a href="https://lumeire-restaurant-application-janmejaysingh-invicis-projects.vercel.app/confirm-reservation?id={Record ID}" style="color: #6366f1;">
+            https://lumeire-restaurant-application-janmejaysingh-invicis-projects.vercel.app/confirm-reservation?id={Record ID}
           </a>
         </p>
       </td>
@@ -115,7 +115,7 @@ Your Reservations table should have these fields:
 
 ## Step 4: Important - Replace YOUR-DOMAIN
 
-After deploying your app to Vercel, replace `YOUR-DOMAIN.vercel.app` in the email template with your actual domain.
+After deploying your app to Vercel, replace `lumeire-restaurant-application-janmejaysingh-invicis-projects.vercel.app` in the email template with your actual domain.
 
 For example: `https://savory-table.vercel.app/confirm-reservation?id={Record ID}`
 
